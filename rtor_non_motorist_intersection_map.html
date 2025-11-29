@@ -1,0 +1,1760 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_8b957c8cb0fb419129be6d91e604b65a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_8b957c8cb0fb419129be6d91e604b65a" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_8b957c8cb0fb419129be6d91e604b65a = L.map(
+                "map_8b957c8cb0fb419129be6d91e604b65a",
+                {
+                    center: [40.43550291666666, -79.96863475877193],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_b8a5116fd2e4f5d57e292de27368b64f = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_b8a5116fd2e4f5d57e292de27368b64f.addTo(map_8b957c8cb0fb419129be6d91e604b65a);
+        
+    
+            var circle_marker_a94a5ac34860c563c1b5030e23d4f295 = L.circleMarker(
+                [40.444921666666666, -79.99384888888889],
+                {"bubblingMouseEvents": true, "color": "#17b500", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#17b500", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 26.0, "stroke": true, "weight": 3}
+            ).addTo(map_8b957c8cb0fb419129be6d91e604b65a);
+        
+    
+        var popup_f159d80e3c8acf43dc6f79516881aa6c = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_144eba12cbbb9a3ac1a2191b965651de = $(`<div id="html_144eba12cbbb9a3ac1a2191b965651de" style="width: 100.0%; height: 100.0%;">     <b>Intersection:</b> 11TH ST; PENN AV<br>     <b>Total RTOR crashes:</b> 1<br>     <b>Severity score:</b> 1<br><br>      <b>Pedestrian serious injuries:</b> 0<br>     <b>Pedestrian deaths:</b> 0<br>      <b>Cyclist serious injuries:</b> 0<br>     <b>Cyclist deaths:</b> 0<br>     </div>`)[0];
+                popup_f159d80e3c8acf43dc6f79516881aa6c.setContent(html_144eba12cbbb9a3ac1a2191b965651de);
+            
+        
+
+        circle_marker_a94a5ac34860c563c1b5030e23d4f295.bindPopup(popup_f159d80e3c8acf43dc6f79516881aa6c)
+        ;
+
+        
+    
+    
+            var circle_marker_c1bde2d85c20a9249252caecdf687adf = L.circleMarker(
+                [40.44880388888888, -79.98750527777779],
+                {"bubblingMouseEvents": true, "color": "#17b500", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#17b500", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 26.0, "stroke": true, "weight": 3}
+            ).addTo(map_8b957c8cb0fb419129be6d91e604b65a);
+        
+    
+        var popup_a8b218a6d14d41047428f96081356f1a = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_d3c7dcf72005ace03300ff06c660957a = $(`<div id="html_d3c7dcf72005ace03300ff06c660957a" style="width: 100.0%; height: 100.0%;">     <b>Intersection:</b> 16TH ST; PENN AV<br>     <b>Total RTOR crashes:</b> 1<br>     <b>Severity score:</b> 1<br><br>      <b>Pedestrian serious injuries:</b> 0<br>     <b>Pedestrian deaths:</b> 0<br>      <b>Cyclist serious injuries:</b> 0<br>     <b>Cyclist deaths:</b> 0<br>     </div>`)[0];
+                popup_a8b218a6d14d41047428f96081356f1a.setContent(html_d3c7dcf72005ace03300ff06c660957a);
+            
+        
+
+        circle_marker_c1bde2d85c20a9249252caecdf687adf.bindPopup(popup_a8b218a6d14d41047428f96081356f1a)
+        ;
+
+        
+    
+    
+            var circle_marker_cf9f0b45eec45b36859e0fb9b87d094d = L.circleMarker(
+                [40.45336694444445, -79.97918583333333],
+                {"bubblingMouseEvents": true, "color": "#17b500", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#17b500", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 26.0, "stroke": true, "weight": 3}
+            ).addTo(map_8b957c8cb0fb419129be6d91e604b65a);
+        
+    
+        var popup_55b3f4ab3c3b0d2b65feed32d83106c3 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_230bdbe2f93ff8e7fb0d79db896cc7c1 = $(`<div id="html_230bdbe2f93ff8e7fb0d79db896cc7c1" style="width: 100.0%; height: 100.0%;">     <b>Intersection:</b> 25TH ST; LIBERTY AV<br>     <b>Total RTOR crashes:</b> 1<br>     <b>Severity score:</b> 1<br><br>      <b>Pedestrian serious injuries:</b> 0<br>     <b>Pedestrian deaths:</b> 0<br>      <b>Cyclist serious injuries:</b> 0<br>     <b>Cyclist deaths:</b> 0<br>     </div>`)[0];
+                popup_55b3f4ab3c3b0d2b65feed32d83106c3.setContent(html_230bdbe2f93ff8e7fb0d79db896cc7c1);
+            
+        
+
+        circle_marker_cf9f0b45eec45b36859e0fb9b87d094d.bindPopup(popup_55b3f4ab3c3b0d2b65feed32d83106c3)
+        ;
+
+        
+    
+    
+            var circle_marker_4d3049be873ed3b0fce66e4a58b794b9 = L.circleMarker(
+                [40.446797777777775, -79.95057972222223],
+                {"bubblingMouseEvents": true, "color": "#ff0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff0000", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 26.0, "stroke": true, "weight": 3}
+            ).addTo(map_8b957c8cb0fb419129be6d91e604b65a);
+        
+    
+        var popup_03e5a445abfc89a63757fb49ebbf8dde = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_1850017d34e9e4aecae080983b6eff37 = $(`<div id="html_1850017d34e9e4aecae080983b6eff37" style="width: 100.0%; height: 100.0%;">     <b>Intersection:</b> 5TH AV; DITHRIDGE ST<br>     <b>Total RTOR crashes:</b> 1<br>     <b>Severity score:</b> 11<br><br>      <b>Pedestrian serious injuries:</b> 0<br>     <b>Pedestrian deaths:</b> 1<br>      <b>Cyclist serious injuries:</b> 0<br>     <b>Cyclist deaths:</b> 0<br>     </div>`)[0];
+                popup_03e5a445abfc89a63757fb49ebbf8dde.setContent(html_1850017d34e9e4aecae080983b6eff37);
+            
+        
+
+        circle_marker_4d3049be873ed3b0fce66e4a58b794b9.bindPopup(popup_03e5a445abfc89a63757fb49ebbf8dde)
+        ;
+
+        
+    
+    
+            var circle_marker_15168bb2d03bebf388ec12b6c698d6c3 = L.circleMarker(
+                [40.44110583333333, -79.95941388888889],
+                {"bubblingMouseEvents": true, "color": "#17b500", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#17b500", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 26.0, "stroke": true, "weight": 3}
+            ).addTo(map_8b957c8cb0fb419129be6d91e604b65a);
+        
+    
+        var popup_6cfa6c9263d4b2962bd244b1d38013f9 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_d8bb5acb63eb7cc19af67ebf0e7430ab = $(`<div id="html_d8bb5acb63eb7cc19af67ebf0e7430ab" style="width: 100.0%; height: 100.0%;">     <b>Intersection:</b> 5TH AV; LOTHROP ST<br>     <b>Total RTOR crashes:</b> 1<br>     <b>Severity score:</b> 1<br><br>      <b>Pedestrian serious injuries:</b> 0<br>     <b>Pedestrian deaths:</b> 0<br>      <b>Cyclist serious injuries:</b> 0<br>     <b>Cyclist deaths:</b> 0<br>     </div>`)[0];
+                popup_6cfa6c9263d4b2962bd244b1d38013f9.setContent(html_d8bb5acb63eb7cc19af67ebf0e7430ab);
+            
+        
+
+        circle_marker_15168bb2d03bebf388ec12b6c698d6c3.bindPopup(popup_6cfa6c9263d4b2962bd244b1d38013f9)
+        ;
+
+        
+    
+    
+            var circle_marker_0688188b10750eb4fd891e4de72d7d46 = L.circleMarker(
+                [40.43856777777778, -79.98508694444445],
+                {"bubblingMouseEvents": true, "color": "#17b500", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#17b500", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 26.0, "stroke": true, "weight": 3}
+            ).addTo(map_8b957c8cb0fb419129be6d91e604b65a);
+        
+    
+        var popup_21e2b0c2882363c627c09b1bd6f07e2b = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_9a88fe6801134e746773f57947190969 = $(`<div id="html_9a88fe6801134e746773f57947190969" style="width: 100.0%; height: 100.0%;">     <b>Intersection:</b> 5TH AV; PRIDE ST<br>     <b>Total RTOR crashes:</b> 1<br>     <b>Severity score:</b> 1<br><br>      <b>Pedestrian serious injuries:</b> 0<br>     <b>Pedestrian deaths:</b> 0<br>      <b>Cyclist serious injuries:</b> 0<br>     <b>Cyclist deaths:</b> 0<br>     </div>`)[0];
+                popup_21e2b0c2882363c627c09b1bd6f07e2b.setContent(html_9a88fe6801134e746773f57947190969);
+            
+        
+
+        circle_marker_0688188b10750eb4fd891e4de72d7d46.bindPopup(popup_21e2b0c2882363c627c09b1bd6f07e2b)
+        ;
+
+        
+    
+    
+            var circle_marker_73f42c04a754e443170429afca49929d = L.circleMarker(
+                [40.45664222222223, -79.93967861111112],
+                {"bubblingMouseEvents": true, "color": "#17b500", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#17b500", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 26.0, "stroke": true, "weight": 3}
+            ).addTo(map_8b957c8cb0fb419129be6d91e604b65a);
+        
+    
+        var popup_ab4edc3b62584c7f91dae92d9d5d1be7 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_b8334e48d73345ec46508a3650598c72 = $(`<div id="html_b8334e48d73345ec46508a3650598c72" style="width: 100.0%; height: 100.0%;">     <b>Intersection:</b> ATLANTIC AV; BAUM BL; LIBERTY AV<br>     <b>Total RTOR crashes:</b> 1<br>     <b>Severity score:</b> 1<br><br>      <b>Pedestrian serious injuries:</b> 0<br>     <b>Pedestrian deaths:</b> 0<br>      <b>Cyclist serious injuries:</b> 0<br>     <b>Cyclist deaths:</b> 0<br>     </div>`)[0];
+                popup_ab4edc3b62584c7f91dae92d9d5d1be7.setContent(html_b8334e48d73345ec46508a3650598c72);
+            
+        
+
+        circle_marker_73f42c04a754e443170429afca49929d.bindPopup(popup_ab4edc3b62584c7f91dae92d9d5d1be7)
+        ;
+
+        
+    
+    
+            var circle_marker_2dfa39fc1a6a6470f366a941286a5294 = L.circleMarker(
+                [40.46456388888889, -79.93859888888889],
+                {"bubblingMouseEvents": true, "color": "#17b500", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#17b500", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 26.0, "stroke": true, "weight": 3}
+            ).addTo(map_8b957c8cb0fb419129be6d91e604b65a);
+        
+    
+        var popup_5707d496f2b8c851fb889f87198dc823 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_991532262d8c7e4c3c7fce430ab42c62 = $(`<div id="html_991532262d8c7e4c3c7fce430ab42c62" style="width: 100.0%; height: 100.0%;">     <b>Intersection:</b> ATLANTIC AV; PENN AV<br>     <b>Total RTOR crashes:</b> 1<br>     <b>Severity score:</b> 1<br><br>      <b>Pedestrian serious injuries:</b> 0<br>     <b>Pedestrian deaths:</b> 0<br>      <b>Cyclist serious injuries:</b> 0<br>     <b>Cyclist deaths:</b> 0<br>     </div>`)[0];
+                popup_5707d496f2b8c851fb889f87198dc823.setContent(html_991532262d8c7e4c3c7fce430ab42c62);
+            
+        
+
+        circle_marker_2dfa39fc1a6a6470f366a941286a5294.bindPopup(popup_5707d496f2b8c851fb889f87198dc823)
+        ;
+
+        
+    
+    
+            var circle_marker_a4529c664b6338294b4598cad3b7cf24 = L.circleMarker(
+                [40.593897222222225, -79.99688277777778],
+                {"bubblingMouseEvents": true, "color": "#736d00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#736d00", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 26.0, "stroke": true, "weight": 3}
+            ).addTo(map_8b957c8cb0fb419129be6d91e604b65a);
+        
+    
+        var popup_e11adae91f85c5db58f117edeb1b724d = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_538e6778a0e1fd1afdae1cfc769b1540 = $(`<div id="html_538e6778a0e1fd1afdae1cfc769b1540" style="width: 100.0%; height: 100.0%;">     <b>Intersection:</b> BABCOCK BL; WILDWOOD RD<br>     <b>Total RTOR crashes:</b> 1<br>     <b>Severity score:</b> 5<br><br>      <b>Pedestrian serious injuries:</b> 0<br>     <b>Pedestrian deaths:</b> 0<br>      <b>Cyclist serious injuries:</b> 1<br>     <b>Cyclist deaths:</b> 0<br>     </div>`)[0];
+                popup_e11adae91f85c5db58f117edeb1b724d.setContent(html_538e6778a0e1fd1afdae1cfc769b1540);
+            
+        
+
+        circle_marker_a4529c664b6338294b4598cad3b7cf24.bindPopup(popup_e11adae91f85c5db58f117edeb1b724d)
+        ;
+
+        
+    
+    
+            var circle_marker_19faac21566e79c1e89cc3c8b01998cd = L.circleMarker(
+                [40.357661666666665, -79.999655],
+                {"bubblingMouseEvents": true, "color": "#17b500", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#17b500", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 26.0, "stroke": true, "weight": 3}
+            ).addTo(map_8b957c8cb0fb419129be6d91e604b65a);
+        
+    
+        var popup_a63797e8f0cf07a08a60943634954bfb = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_0e8343443febd7e6dbe4faba2e80edb2 = $(`<div id="html_0e8343443febd7e6dbe4faba2e80edb2" style="width: 100.0%; height: 100.0%;">     <b>Intersection:</b> BAPTIST RD; DOVERDELL RD; WEYMAN RD<br>     <b>Total RTOR crashes:</b> 1<br>     <b>Severity score:</b> 1<br><br>      <b>Pedestrian serious injuries:</b> 0<br>     <b>Pedestrian deaths:</b> 0<br>      <b>Cyclist serious injuries:</b> 0<br>     <b>Cyclist deaths:</b> 0<br>     </div>`)[0];
+                popup_a63797e8f0cf07a08a60943634954bfb.setContent(html_0e8343443febd7e6dbe4faba2e80edb2);
+            
+        
+
+        circle_marker_19faac21566e79c1e89cc3c8b01998cd.bindPopup(popup_a63797e8f0cf07a08a60943634954bfb)
+        ;
+
+        
+    
+    
+            var circle_marker_526cca012164e0dd16757d027cd5a636 = L.circleMarker(
+                [40.35763, -80.00020611111111],
+                {"bubblingMouseEvents": true, "color": "#17b500", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#17b500", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 26.0, "stroke": true, "weight": 3}
+            ).addTo(map_8b957c8cb0fb419129be6d91e604b65a);
+        
+    
+        var popup_d94563bdd746b49b91f03a1f53c6972a = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_fc41c680311848c7fcb1c68c608c20fb = $(`<div id="html_fc41c680311848c7fcb1c68c608c20fb" style="width: 100.0%; height: 100.0%;">     <b>Intersection:</b> BAPTIST RD; GROVE RD<br>     <b>Total RTOR crashes:</b> 1<br>     <b>Severity score:</b> 1<br><br>      <b>Pedestrian serious injuries:</b> 0<br>     <b>Pedestrian deaths:</b> 0<br>      <b>Cyclist serious injuries:</b> 0<br>     <b>Cyclist deaths:</b> 0<br>     </div>`)[0];
+                popup_d94563bdd746b49b91f03a1f53c6972a.setContent(html_fc41c680311848c7fcb1c68c608c20fb);
+            
+        
+
+        circle_marker_526cca012164e0dd16757d027cd5a636.bindPopup(popup_d94563bdd746b49b91f03a1f53c6972a)
+        ;
+
+        
+    
+    
+            var circle_marker_fe831bb788618e96de1cd88f20cf2425 = L.circleMarker(
+                [40.43601194444444, -79.9229038888889],
+                {"bubblingMouseEvents": true, "color": "#17b500", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#17b500", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 26.0, "stroke": true, "weight": 3}
+            ).addTo(map_8b957c8cb0fb419129be6d91e604b65a);
+        
+    
+        var popup_03dd282bf0a0860695bffbc1f346a78f = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_e3344477eecb7fb129017ae9aed32f39 = $(`<div id="html_e3344477eecb7fb129017ae9aed32f39" style="width: 100.0%; height: 100.0%;">     <b>Intersection:</b> BARTLETT ST; MURRAY AV<br>     <b>Total RTOR crashes:</b> 1<br>     <b>Severity score:</b> 1<br><br>      <b>Pedestrian serious injuries:</b> 0<br>     <b>Pedestrian deaths:</b> 0<br>      <b>Cyclist serious injuries:</b> 0<br>     <b>Cyclist deaths:</b> 0<br>     </div>`)[0];
+                popup_03dd282bf0a0860695bffbc1f346a78f.setContent(html_e3344477eecb7fb129017ae9aed32f39);
+            
+        
+
+        circle_marker_fe831bb788618e96de1cd88f20cf2425.bindPopup(popup_03dd282bf0a0860695bffbc1f346a78f)
+        ;
+
+        
+    
+    
+            var circle_marker_9ccc20dcb5a25ff86d4e2476d9acdf97 = L.circleMarker(
+                [40.45966138888889, -79.9293863888889],
+                {"bubblingMouseEvents": true, "color": "#17b500", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#17b500", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 26.0, "stroke": true, "weight": 3}
+            ).addTo(map_8b957c8cb0fb419129be6d91e604b65a);
+        
+    
+        var popup_ec710d17d101577a6369f295f58c8f9d = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_5e31441d6e7166d03b4498e7c5e3c8c1 = $(`<div id="html_5e31441d6e7166d03b4498e7c5e3c8c1" style="width: 100.0%; height: 100.0%;">     <b>Intersection:</b> BAUM BL; CENTRE AV; S EUCLID AV<br>     <b>Total RTOR crashes:</b> 1<br>     <b>Severity score:</b> 1<br><br>      <b>Pedestrian serious injuries:</b> 0<br>     <b>Pedestrian deaths:</b> 0<br>      <b>Cyclist serious injuries:</b> 0<br>     <b>Cyclist deaths:</b> 0<br>     </div>`)[0];
+                popup_ec710d17d101577a6369f295f58c8f9d.setContent(html_5e31441d6e7166d03b4498e7c5e3c8c1);
+            
+        
+
+        circle_marker_9ccc20dcb5a25ff86d4e2476d9acdf97.bindPopup(popup_ec710d17d101577a6369f295f58c8f9d)
+        ;
+
+        
+    
+    
+            var circle_marker_fc988d556e47fac440092dd887b588e5 = L.circleMarker(
+                [40.4521, -80.13390000000001],
+                {"bubblingMouseEvents": true, "color": "#17b500", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#17b500", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 26.0, "stroke": true, "weight": 3}
+            ).addTo(map_8b957c8cb0fb419129be6d91e604b65a);
+        
+    
+        var popup_cbae8d46b1af3e6e6fb4f5a01850f6af = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_72b102ba53309a85e523722c9511d5c4 = $(`<div id="html_72b102ba53309a85e523722c9511d5c4" style="width: 100.0%; height: 100.0%;">     <b>Intersection:</b> BEAVER GRADE RD; STEUBENVILLE PK<br>     <b>Total RTOR crashes:</b> 1<br>     <b>Severity score:</b> 1<br><br>      <b>Pedestrian serious injuries:</b> 0<br>     <b>Pedestrian deaths:</b> 0<br>      <b>Cyclist serious injuries:</b> 0<br>     <b>Cyclist deaths:</b> 0<br>     </div>`)[0];
+                popup_cbae8d46b1af3e6e6fb4f5a01850f6af.setContent(html_72b102ba53309a85e523722c9511d5c4);
+            
+        
+
+        circle_marker_fc988d556e47fac440092dd887b588e5.bindPopup(popup_cbae8d46b1af3e6e6fb4f5a01850f6af)
+        ;
+
+        
+    
+    
+            var circle_marker_1dcee63d16059a93286993680e729002 = L.circleMarker(
+                [40.442276944444444, -79.91717694444445],
+                {"bubblingMouseEvents": true, "color": "#17b500", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#17b500", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 26.0, "stroke": true, "weight": 3}
+            ).addTo(map_8b957c8cb0fb419129be6d91e604b65a);
+        
+    
+        var popup_78f6a6e21e33ca091a794173055c450c = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_21675fee3de4a154ed55ca6632e82797 = $(`<div id="html_21675fee3de4a154ed55ca6632e82797" style="width: 100.0%; height: 100.0%;">     <b>Intersection:</b> BEECHWOOD BL; NORTHUMBERLAND ST<br>     <b>Total RTOR crashes:</b> 1<br>     <b>Severity score:</b> 1<br><br>      <b>Pedestrian serious injuries:</b> 0<br>     <b>Pedestrian deaths:</b> 0<br>      <b>Cyclist serious injuries:</b> 0<br>     <b>Cyclist deaths:</b> 0<br>     </div>`)[0];
+                popup_78f6a6e21e33ca091a794173055c450c.setContent(html_21675fee3de4a154ed55ca6632e82797);
+            
+        
+
+        circle_marker_1dcee63d16059a93286993680e729002.bindPopup(popup_78f6a6e21e33ca091a794173055c450c)
+        ;
+
+        
+    
+    
+            var circle_marker_9328dea2e44ab2a7b719802a2a8afa6a = L.circleMarker(
+                [40.45503444444445, -79.89039722222223],
+                {"bubblingMouseEvents": true, "color": "#17b500", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#17b500", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 26.0, "stroke": true, "weight": 3}
+            ).addTo(map_8b957c8cb0fb419129be6d91e604b65a);
+        
+    
+        var popup_d1a74e8f8de23cddf311dfbe659ae8bc = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_b85cba5060209396bb24365e4823c8b6 = $(`<div id="html_b85cba5060209396bb24365e4823c8b6" style="width: 100.0%; height: 100.0%;">     <b>Intersection:</b> BENNETT ST; BRADDOCK AV<br>     <b>Total RTOR crashes:</b> 1<br>     <b>Severity score:</b> 1<br><br>      <b>Pedestrian serious injuries:</b> 0<br>     <b>Pedestrian deaths:</b> 0<br>      <b>Cyclist serious injuries:</b> 0<br>     <b>Cyclist deaths:</b> 0<br>     </div>`)[0];
+                popup_d1a74e8f8de23cddf311dfbe659ae8bc.setContent(html_b85cba5060209396bb24365e4823c8b6);
+            
+        
+
+        circle_marker_9328dea2e44ab2a7b719802a2a8afa6a.bindPopup(popup_d1a74e8f8de23cddf311dfbe659ae8bc)
+        ;
+
+        
+    
+    
+            var circle_marker_37e8fdc9dd9dc511e6eb77d43f2a52fc = L.circleMarker(
+                [40.43459194444444, -79.95459694444445],
+                {"bubblingMouseEvents": true, "color": "#17b500", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#17b500", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 26.0, "stroke": true, "weight": 3}
+            ).addTo(map_8b957c8cb0fb419129be6d91e604b65a);
+        
+    
+        var popup_07b8dbeb1f71ba88117960c82caf3d12 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_f47331b833cd36c8b3607863e7f494db = $(`<div id="html_f47331b833cd36c8b3607863e7f494db" style="width: 100.0%; height: 100.0%;">     <b>Intersection:</b> BOULEVARD OF THE ALLIES BL; WARD ST<br>     <b>Total RTOR crashes:</b> 1<br>     <b>Severity score:</b> 1<br><br>      <b>Pedestrian serious injuries:</b> 0<br>     <b>Pedestrian deaths:</b> 0<br>      <b>Cyclist serious injuries:</b> 0<br>     <b>Cyclist deaths:</b> 0<br>     </div>`)[0];
+                popup_07b8dbeb1f71ba88117960c82caf3d12.setContent(html_f47331b833cd36c8b3607863e7f494db);
+            
+        
+
+        circle_marker_37e8fdc9dd9dc511e6eb77d43f2a52fc.bindPopup(popup_07b8dbeb1f71ba88117960c82caf3d12)
+        ;
+
+        
+    
+    
+            var circle_marker_8e64d3e6a6b337bd2303bb9fb8bb6b10 = L.circleMarker(
+                [40.35996888888889, -80.1115725],
+                {"bubblingMouseEvents": true, "color": "#17b500", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#17b500", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 26.0, "stroke": true, "weight": 3}
+            ).addTo(map_8b957c8cb0fb419129be6d91e604b65a);
+        
+    
+        var popup_e948153401ee93ffcf2686cd001c749b = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_fae1430f1242f476a5ed67ff95415570 = $(`<div id="html_fae1430f1242f476a5ed67ff95415570" style="width: 100.0%; height: 100.0%;">     <b>Intersection:</b> BOWER HILL RD; MURRAY ST; WASHINGTON AV<br>     <b>Total RTOR crashes:</b> 1<br>     <b>Severity score:</b> 1<br><br>      <b>Pedestrian serious injuries:</b> 0<br>     <b>Pedestrian deaths:</b> 0<br>      <b>Cyclist serious injuries:</b> 0<br>     <b>Cyclist deaths:</b> 0<br>     </div>`)[0];
+                popup_e948153401ee93ffcf2686cd001c749b.setContent(html_fae1430f1242f476a5ed67ff95415570);
+            
+        
+
+        circle_marker_8e64d3e6a6b337bd2303bb9fb8bb6b10.bindPopup(popup_e948153401ee93ffcf2686cd001c749b)
+        ;
+
+        
+    
+    
+            var circle_marker_b39fad879a5bc46ff4f6dbc3ec7613e9 = L.circleMarker(
+                [40.448881944444445, -79.89391583333334],
+                {"bubblingMouseEvents": true, "color": "#17b500", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#17b500", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 26.0, "stroke": true, "weight": 3}
+            ).addTo(map_8b957c8cb0fb419129be6d91e604b65a);
+        
+    
+        var popup_7ab7e63ecc847414115ba04b7f41900b = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_ef09e0ebcc2f3bab0b93365457378849 = $(`<div id="html_ef09e0ebcc2f3bab0b93365457378849" style="width: 100.0%; height: 100.0%;">     <b>Intersection:</b> BRADDOCK AV; THOMAS BL<br>     <b>Total RTOR crashes:</b> 1<br>     <b>Severity score:</b> 1<br><br>      <b>Pedestrian serious injuries:</b> 0<br>     <b>Pedestrian deaths:</b> 0<br>      <b>Cyclist serious injuries:</b> 0<br>     <b>Cyclist deaths:</b> 0<br>     </div>`)[0];
+                popup_7ab7e63ecc847414115ba04b7f41900b.setContent(html_ef09e0ebcc2f3bab0b93365457378849);
+            
+        
+
+        circle_marker_b39fad879a5bc46ff4f6dbc3ec7613e9.bindPopup(popup_7ab7e63ecc847414115ba04b7f41900b)
+        ;
+
+        
+    
+    
+            var circle_marker_335adaab0058447f550be94f60afd551 = L.circleMarker(
+                [40.47373694444445, -80.02883083333333],
+                {"bubblingMouseEvents": true, "color": "#17b500", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#17b500", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 26.0, "stroke": true, "weight": 3}
+            ).addTo(map_8b957c8cb0fb419129be6d91e604b65a);
+        
+    
+        var popup_977b902aa3a56c0fb8e5732dc4ed116f = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_d8b3356bb6dbe9bc93cb1b786acc3d8b = $(`<div id="html_d8b3356bb6dbe9bc93cb1b786acc3d8b" style="width: 100.0%; height: 100.0%;">     <b>Intersection:</b> BRIGHTON RD; SCHIMMER ST<br>     <b>Total RTOR crashes:</b> 1<br>     <b>Severity score:</b> 1<br><br>      <b>Pedestrian serious injuries:</b> 0<br>     <b>Pedestrian deaths:</b> 0<br>      <b>Cyclist serious injuries:</b> 0<br>     <b>Cyclist deaths:</b> 0<br>     </div>`)[0];
+                popup_977b902aa3a56c0fb8e5732dc4ed116f.setContent(html_d8b3356bb6dbe9bc93cb1b786acc3d8b);
+            
+        
+
+        circle_marker_335adaab0058447f550be94f60afd551.bindPopup(popup_977b902aa3a56c0fb8e5732dc4ed116f)
+        ;
+
+        
+    
+    
+            var circle_marker_eece8d6e628d2d1836e7c97f3266fe08 = L.circleMarker(
+                [40.39837555555555, -80.02620472222222],
+                {"bubblingMouseEvents": true, "color": "#17b500", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#17b500", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 26.0, "stroke": true, "weight": 3}
+            ).addTo(map_8b957c8cb0fb419129be6d91e604b65a);
+        
+    
+        var popup_eeef6677cb3db37c6fbe9011da3b439c = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_ed72d7acef8ea51f7fd3e41cd486f474 = $(`<div id="html_ed72d7acef8ea51f7fd3e41cd486f474" style="width: 100.0%; height: 100.0%;">     <b>Intersection:</b> BROOKLINE BL; WEST LIBERTY AV<br>     <b>Total RTOR crashes:</b> 1<br>     <b>Severity score:</b> 1<br><br>      <b>Pedestrian serious injuries:</b> 0<br>     <b>Pedestrian deaths:</b> 0<br>      <b>Cyclist serious injuries:</b> 0<br>     <b>Cyclist deaths:</b> 0<br>     </div>`)[0];
+                popup_eeef6677cb3db37c6fbe9011da3b439c.setContent(html_ed72d7acef8ea51f7fd3e41cd486f474);
+            
+        
+
+        circle_marker_eece8d6e628d2d1836e7c97f3266fe08.bindPopup(popup_eeef6677cb3db37c6fbe9011da3b439c)
+        ;
+
+        
+    
+    
+            var circle_marker_0e8956417bd95907f8efd1e749e2668b = L.circleMarker(
+                [40.54580138888889, -80.01662166666667],
+                {"bubblingMouseEvents": true, "color": "#17b500", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#17b500", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 26.0, "stroke": true, "weight": 3}
+            ).addTo(map_8b957c8cb0fb419129be6d91e604b65a);
+        
+    
+        var popup_dfbc31b70dcc5de7fe954de8aaff688a = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_f3c355d2ec2b7a88641858ce27d396d9 = $(`<div id="html_f3c355d2ec2b7a88641858ce27d396d9" style="width: 100.0%; height: 100.0%;">     <b>Intersection:</b> BROWNS LN; JOHNANNA DR; MCKNIGHT RD<br>     <b>Total RTOR crashes:</b> 1<br>     <b>Severity score:</b> 1<br><br>      <b>Pedestrian serious injuries:</b> 0<br>     <b>Pedestrian deaths:</b> 0<br>      <b>Cyclist serious injuries:</b> 0<br>     <b>Cyclist deaths:</b> 0<br>     </div>`)[0];
+                popup_dfbc31b70dcc5de7fe954de8aaff688a.setContent(html_f3c355d2ec2b7a88641858ce27d396d9);
+            
+        
+
+        circle_marker_0e8956417bd95907f8efd1e749e2668b.bindPopup(popup_dfbc31b70dcc5de7fe954de8aaff688a)
+        ;
+
+        
+    
+    
+            var circle_marker_acc990f0be867544baa5ecbc4af9594c = L.circleMarker(
+                [40.41043194444444, -79.99038194444445],
+                {"bubblingMouseEvents": true, "color": "#2ea300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ea300", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 46.0, "stroke": true, "weight": 3}
+            ).addTo(map_8b957c8cb0fb419129be6d91e604b65a);
+        
+    
+        var popup_1728a6ec63d919631c2afc32b1529c81 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_1f6f2f7d0da08c23c2b3dc9dc399c2fd = $(`<div id="html_1f6f2f7d0da08c23c2b3dc9dc399c2fd" style="width: 100.0%; height: 100.0%;">     <b>Intersection:</b> BROWNSVILLE RD; KNOX AV<br>     <b>Total RTOR crashes:</b> 2<br>     <b>Severity score:</b> 2<br><br>      <b>Pedestrian serious injuries:</b> 0<br>     <b>Pedestrian deaths:</b> 0<br>      <b>Cyclist serious injuries:</b> 0<br>     <b>Cyclist deaths:</b> 0<br>     </div>`)[0];
+                popup_1728a6ec63d919631c2afc32b1529c81.setContent(html_1f6f2f7d0da08c23c2b3dc9dc399c2fd);
+            
+        
+
+        circle_marker_acc990f0be867544baa5ecbc4af9594c.bindPopup(popup_1728a6ec63d919631c2afc32b1529c81)
+        ;
+
+        
+    
+    
+            var circle_marker_01a237315467c8ae53c538914bae42d6 = L.circleMarker(
+                [40.40882388888889, -79.99111888888889],
+                {"bubblingMouseEvents": true, "color": "#17b500", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#17b500", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 26.0, "stroke": true, "weight": 3}
+            ).addTo(map_8b957c8cb0fb419129be6d91e604b65a);
+        
+    
+        var popup_8dd0f832d0aaed20e52f0fc7f9e05ab2 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_e8fe0b849dcab9daf59c0d21e4f7f04a = $(`<div id="html_e8fe0b849dcab9daf59c0d21e4f7f04a" style="width: 100.0%; height: 100.0%;">     <b>Intersection:</b> BROWNSVILLE RD; MCKINLEY ST<br>     <b>Total RTOR crashes:</b> 1<br>     <b>Severity score:</b> 1<br><br>      <b>Pedestrian serious injuries:</b> 0<br>     <b>Pedestrian deaths:</b> 0<br>      <b>Cyclist serious injuries:</b> 0<br>     <b>Cyclist deaths:</b> 0<br>     </div>`)[0];
+                popup_8dd0f832d0aaed20e52f0fc7f9e05ab2.setContent(html_e8fe0b849dcab9daf59c0d21e4f7f04a);
+            
+        
+
+        circle_marker_01a237315467c8ae53c538914bae42d6.bindPopup(popup_8dd0f832d0aaed20e52f0fc7f9e05ab2)
+        ;
+
+        
+    
+    
+            var circle_marker_5b599ce1201ebcfd50a00cb515622dc2 = L.circleMarker(
+                [40.45332805555556, -80.00145666666667],
+                {"bubblingMouseEvents": true, "color": "#17b500", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#17b500", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 26.0, "stroke": true, "weight": 3}
+            ).addTo(map_8b957c8cb0fb419129be6d91e604b65a);
+        
+    
+        var popup_0fce4ab8a9c4b7a551cf8964ed4ec9dc = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_f2b49fc21045696df0542ba435bf84b4 = $(`<div id="html_f2b49fc21045696df0542ba435bf84b4" style="width: 100.0%; height: 100.0%;">     <b>Intersection:</b> CEDAR AV; E OHIO ST<br>     <b>Total RTOR crashes:</b> 1<br>     <b>Severity score:</b> 1<br><br>      <b>Pedestrian serious injuries:</b> 0<br>     <b>Pedestrian deaths:</b> 0<br>      <b>Cyclist serious injuries:</b> 0<br>     <b>Cyclist deaths:</b> 0<br>     </div>`)[0];
+                popup_0fce4ab8a9c4b7a551cf8964ed4ec9dc.setContent(html_f2b49fc21045696df0542ba435bf84b4);
+            
+        
+
+        circle_marker_5b599ce1201ebcfd50a00cb515622dc2.bindPopup(popup_0fce4ab8a9c4b7a551cf8964ed4ec9dc)
+        ;
+
+        
+    
+    
+            var circle_marker_daa3c4977818903f0c0588f58cb74ca2 = L.circleMarker(
+                [40.375099444444444, -80.05672694444443],
+                {"bubblingMouseEvents": true, "color": "#17b500", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#17b500", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 26.0, "stroke": true, "weight": 3}
+            ).addTo(map_8b957c8cb0fb419129be6d91e604b65a);
+        
+    
+        var popup_857bafa13a0e123e8b4861c40873201b = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_16b9549bda51fe7bffe383c27825c027 = $(`<div id="html_16b9549bda51fe7bffe383c27825c027" style="width: 100.0%; height: 100.0%;">     <b>Intersection:</b> CEDAR BL; GREENHURST DR; MORGAN DR<br>     <b>Total RTOR crashes:</b> 1<br>     <b>Severity score:</b> 1<br><br>      <b>Pedestrian serious injuries:</b> 0<br>     <b>Pedestrian deaths:</b> 0<br>      <b>Cyclist serious injuries:</b> 0<br>     <b>Cyclist deaths:</b> 0<br>     </div>`)[0];
+                popup_857bafa13a0e123e8b4861c40873201b.setContent(html_16b9549bda51fe7bffe383c27825c027);
+            
+        
+
+        circle_marker_daa3c4977818903f0c0588f58cb74ca2.bindPopup(popup_857bafa13a0e123e8b4861c40873201b)
+        ;
+
+        
+    
+    
+            var circle_marker_ed9e920e44328adb7806875978861ddd = L.circleMarker(
+                [40.38138888888889, -80.04431083333333],
+                {"bubblingMouseEvents": true, "color": "#17b500", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#17b500", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 26.0, "stroke": true, "weight": 3}
+            ).addTo(map_8b957c8cb0fb419129be6d91e604b65a);
+        
+    
+        var popup_fc52d1ce695acdff73da431d7c7b9fbc = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_8eba85ada7faaced921dae537e3d0d64 = $(`<div id="html_8eba85ada7faaced921dae537e3d0d64" style="width: 100.0%; height: 100.0%;">     <b>Intersection:</b> CEDAR BL; WASHINGTON RD<br>     <b>Total RTOR crashes:</b> 1<br>     <b>Severity score:</b> 1<br><br>      <b>Pedestrian serious injuries:</b> 0<br>     <b>Pedestrian deaths:</b> 0<br>      <b>Cyclist serious injuries:</b> 0<br>     <b>Cyclist deaths:</b> 0<br>     </div>`)[0];
+                popup_fc52d1ce695acdff73da431d7c7b9fbc.setContent(html_8eba85ada7faaced921dae537e3d0d64);
+            
+        
+
+        circle_marker_ed9e920e44328adb7806875978861ddd.bindPopup(popup_fc52d1ce695acdff73da431d7c7b9fbc)
+        ;
+
+        
+    
+    
+            var circle_marker_76f97c52b11c0ff6790cf359fb380126 = L.circleMarker(
+                [40.34063888888889, -79.96452111111111],
+                {"bubblingMouseEvents": true, "color": "#17b500", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#17b500", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 26.0, "stroke": true, "weight": 3}
+            ).addTo(map_8b957c8cb0fb419129be6d91e604b65a);
+        
+    
+        var popup_45d26a7875f24fd67002465bd15f41b5 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_0c97d776ebf9f9dedd14aaf6159be381 = $(`<div id="html_0c97d776ebf9f9dedd14aaf6159be381" style="width: 100.0%; height: 100.0%;">     <b>Intersection:</b> CLAIRTON BL; OLD CLAIRTON RD; OLD LEBANON CHURCH RD; PLEASANT HLLS INT/RP D RD<br>     <b>Total RTOR crashes:</b> 1<br>     <b>Severity score:</b> 1<br><br>      <b>Pedestrian serious injuries:</b> 0<br>     <b>Pedestrian deaths:</b> 0<br>      <b>Cyclist serious injuries:</b> 0<br>     <b>Cyclist deaths:</b> 0<br>     </div>`)[0];
+                popup_45d26a7875f24fd67002465bd15f41b5.setContent(html_0c97d776ebf9f9dedd14aaf6159be381);
+            
+        
+
+        circle_marker_76f97c52b11c0ff6790cf359fb380126.bindPopup(popup_45d26a7875f24fd67002465bd15f41b5)
+        ;
+
+        
+    
+    
+            var circle_marker_ae271e9e07594a1169d8005833d5d3f3 = L.circleMarker(
+                [40.45662388888889, -80.19352277777779],
+                {"bubblingMouseEvents": true, "color": "#17b500", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#17b500", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 26.0, "stroke": true, "weight": 3}
+            ).addTo(map_8b957c8cb0fb419129be6d91e604b65a);
+        
+    
+        var popup_97f40cf874036a7f4259bad4a0647408 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_1ba612af6a3d7e4b4ecbc55e399f3cda = $(`<div id="html_1ba612af6a3d7e4b4ecbc55e399f3cda" style="width: 100.0%; height: 100.0%;">     <b>Intersection:</b> CLIFF MINE RD; SUMMIT PARK DR<br>     <b>Total RTOR crashes:</b> 1<br>     <b>Severity score:</b> 1<br><br>      <b>Pedestrian serious injuries:</b> 0<br>     <b>Pedestrian deaths:</b> 0<br>      <b>Cyclist serious injuries:</b> 0<br>     <b>Cyclist deaths:</b> 0<br>     </div>`)[0];
+                popup_97f40cf874036a7f4259bad4a0647408.setContent(html_1ba612af6a3d7e4b4ecbc55e399f3cda);
+            
+        
+
+        circle_marker_ae271e9e07594a1169d8005833d5d3f3.bindPopup(popup_97f40cf874036a7f4259bad4a0647408)
+        ;
+
+        
+    
+    
+            var circle_marker_08179c9c82c7d0da4e587ce65353b65d = L.circleMarker(
+                [40.38843416666666, -80.05711416666666],
+                {"bubblingMouseEvents": true, "color": "#17b500", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#17b500", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 26.0, "stroke": true, "weight": 3}
+            ).addTo(map_8b957c8cb0fb419129be6d91e604b65a);
+        
+    
+        var popup_74ab364d563377658d68284c3b8d85d4 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_dda5277763a03296212b741311f70ba0 = $(`<div id="html_dda5277763a03296212b741311f70ba0" style="width: 100.0%; height: 100.0%;">     <b>Intersection:</b> COCHRAN RD; OSAGE RD; PARKER DR; VALLEYVIEW RD<br>     <b>Total RTOR crashes:</b> 1<br>     <b>Severity score:</b> 1<br><br>      <b>Pedestrian serious injuries:</b> 0<br>     <b>Pedestrian deaths:</b> 0<br>      <b>Cyclist serious injuries:</b> 0<br>     <b>Cyclist deaths:</b> 0<br>     </div>`)[0];
+                popup_74ab364d563377658d68284c3b8d85d4.setContent(html_dda5277763a03296212b741311f70ba0);
+            
+        
+
+        circle_marker_08179c9c82c7d0da4e587ce65353b65d.bindPopup(popup_74ab364d563377658d68284c3b8d85d4)
+        ;
+
+        
+    
+    
+            var circle_marker_29108cc48be4dbe69ba4141b1a725cc7 = L.circleMarker(
+                [40.36649638888889, -80.04872416666666],
+                {"bubblingMouseEvents": true, "color": "#17b500", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#17b500", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 26.0, "stroke": true, "weight": 3}
+            ).addTo(map_8b957c8cb0fb419129be6d91e604b65a);
+        
+    
+        var popup_9408993cc3d331caabae00e40791e0d0 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_85cb6a2ab0a9eb7615acf64057a0ada4 = $(`<div id="html_85cb6a2ab0a9eb7615acf64057a0ada4" style="width: 100.0%; height: 100.0%;">     <b>Intersection:</b> CRESTVUE MANOR DR; LONGUEVUE DR; WASHINGTON RD; WOODHAVEN DR<br>     <b>Total RTOR crashes:</b> 1<br>     <b>Severity score:</b> 1<br><br>      <b>Pedestrian serious injuries:</b> 0<br>     <b>Pedestrian deaths:</b> 0<br>      <b>Cyclist serious injuries:</b> 0<br>     <b>Cyclist deaths:</b> 0<br>     </div>`)[0];
+                popup_9408993cc3d331caabae00e40791e0d0.setContent(html_85cb6a2ab0a9eb7615acf64057a0ada4);
+            
+        
+
+        circle_marker_29108cc48be4dbe69ba4141b1a725cc7.bindPopup(popup_9408993cc3d331caabae00e40791e0d0)
+        ;
+
+        
+    
+    
+            var circle_marker_5addfbba4c20f7f3a8025b0c2ad8c8f9 = L.circleMarker(
+                [40.57212777777778, -80.02350444444444],
+                {"bubblingMouseEvents": true, "color": "#17b500", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#17b500", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 26.0, "stroke": true, "weight": 3}
+            ).addTo(map_8b957c8cb0fb419129be6d91e604b65a);
+        
+    
+        var popup_490ccb7870287b470cf7a47d1e4f4306 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_aa21e16f4f72c209174e05380a447002 = $(`<div id="html_aa21e16f4f72c209174e05380a447002" style="width: 100.0%; height: 100.0%;">     <b>Intersection:</b> CUMBERLAND RD; MCKNIGHT RD<br>     <b>Total RTOR crashes:</b> 1<br>     <b>Severity score:</b> 1<br><br>      <b>Pedestrian serious injuries:</b> 0<br>     <b>Pedestrian deaths:</b> 0<br>      <b>Cyclist serious injuries:</b> 0<br>     <b>Cyclist deaths:</b> 0<br>     </div>`)[0];
+                popup_490ccb7870287b470cf7a47d1e4f4306.setContent(html_aa21e16f4f72c209174e05380a447002);
+            
+        
+
+        circle_marker_5addfbba4c20f7f3a8025b0c2ad8c8f9.bindPopup(popup_490ccb7870287b470cf7a47d1e4f4306)
+        ;
+
+        
+    
+    
+            var circle_marker_f990129e132e676e59a781f86c960ea9 = L.circleMarker(
+                [40.44222444444444, -79.95789527777778],
+                {"bubblingMouseEvents": true, "color": "#17b500", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#17b500", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 26.0, "stroke": true, "weight": 3}
+            ).addTo(map_8b957c8cb0fb419129be6d91e604b65a);
+        
+    
+        var popup_abafeb5fa2bb2b4e99689554949ad97b = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_f8bb554a321d323ce4a32bd8cac2f37f = $(`<div id="html_f8bb554a321d323ce4a32bd8cac2f37f" style="width: 100.0%; height: 100.0%;">     <b>Intersection:</b> DE SOTO AV; FIFTH AV<br>     <b>Total RTOR crashes:</b> 1<br>     <b>Severity score:</b> 1<br><br>      <b>Pedestrian serious injuries:</b> 0<br>     <b>Pedestrian deaths:</b> 0<br>      <b>Cyclist serious injuries:</b> 0<br>     <b>Cyclist deaths:</b> 0<br>     </div>`)[0];
+                popup_abafeb5fa2bb2b4e99689554949ad97b.setContent(html_f8bb554a321d323ce4a32bd8cac2f37f);
+            
+        
+
+        circle_marker_f990129e132e676e59a781f86c960ea9.bindPopup(popup_abafeb5fa2bb2b4e99689554949ad97b)
+        ;
+
+        
+    
+    
+            var circle_marker_20d41f8fe6893329ed6a5311775b5d5b = L.circleMarker(
+                [40.44679055555555, -79.95058],
+                {"bubblingMouseEvents": true, "color": "#2ea300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ea300", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 46.0, "stroke": true, "weight": 3}
+            ).addTo(map_8b957c8cb0fb419129be6d91e604b65a);
+        
+    
+        var popup_f845a3f21385e73f512a340d489edd9d = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_253e64b1ef5cb952193cb62d2b9a6240 = $(`<div id="html_253e64b1ef5cb952193cb62d2b9a6240" style="width: 100.0%; height: 100.0%;">     <b>Intersection:</b> DITHRIDGE ST; FIFTH AV<br>     <b>Total RTOR crashes:</b> 2<br>     <b>Severity score:</b> 2<br><br>      <b>Pedestrian serious injuries:</b> 0<br>     <b>Pedestrian deaths:</b> 0<br>      <b>Cyclist serious injuries:</b> 0<br>     <b>Cyclist deaths:</b> 0<br>     </div>`)[0];
+                popup_f845a3f21385e73f512a340d489edd9d.setContent(html_253e64b1ef5cb952193cb62d2b9a6240);
+            
+        
+
+        circle_marker_20d41f8fe6893329ed6a5311775b5d5b.bindPopup(popup_f845a3f21385e73f512a340d489edd9d)
+        ;
+
+        
+    
+    
+            var circle_marker_57d383401b20e67a204a27bbf1b3db45 = L.circleMarker(
+                [40.338750000000005, -80.05148277777778],
+                {"bubblingMouseEvents": true, "color": "#17b500", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#17b500", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 26.0, "stroke": true, "weight": 3}
+            ).addTo(map_8b957c8cb0fb419129be6d91e604b65a);
+        
+    
+        var popup_9e78f8be4f9208fabccfa6f249e8f333 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_73516c2deff43a182f59b3f1f44a6118 = $(`<div id="html_73516c2deff43a182f59b3f1f44a6118" style="width: 100.0%; height: 100.0%;">     <b>Intersection:</b> DONATI RD; FORT COUCH RD<br>     <b>Total RTOR crashes:</b> 1<br>     <b>Severity score:</b> 1<br><br>      <b>Pedestrian serious injuries:</b> 0<br>     <b>Pedestrian deaths:</b> 0<br>      <b>Cyclist serious injuries:</b> 0<br>     <b>Cyclist deaths:</b> 0<br>     </div>`)[0];
+                popup_9e78f8be4f9208fabccfa6f249e8f333.setContent(html_73516c2deff43a182f59b3f1f44a6118);
+            
+        
+
+        circle_marker_57d383401b20e67a204a27bbf1b3db45.bindPopup(popup_9e78f8be4f9208fabccfa6f249e8f333)
+        ;
+
+        
+    
+    
+            var circle_marker_cab778c1bbcd721e7eb9e78a8e128c14 = L.circleMarker(
+                [40.438084027777776, -79.77421180555555],
+                {"bubblingMouseEvents": true, "color": "#2ea300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ea300", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 46.0, "stroke": true, "weight": 3}
+            ).addTo(map_8b957c8cb0fb419129be6d91e604b65a);
+        
+    
+        var popup_412789a90f1d0bcd753318a703ae8bd8 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_e4d19c00cbf8fbb1207413e807dec17c = $(`<div id="html_e4d19c00cbf8fbb1207413e807dec17c" style="width: 100.0%; height: 100.0%;">     <b>Intersection:</b> DUFF RD; WILLIAM PENN HW<br>     <b>Total RTOR crashes:</b> 2<br>     <b>Severity score:</b> 2<br><br>      <b>Pedestrian serious injuries:</b> 0<br>     <b>Pedestrian deaths:</b> 0<br>      <b>Cyclist serious injuries:</b> 0<br>     <b>Cyclist deaths:</b> 0<br>     </div>`)[0];
+                popup_412789a90f1d0bcd753318a703ae8bd8.setContent(html_e4d19c00cbf8fbb1207413e807dec17c);
+            
+        
+
+        circle_marker_cab778c1bbcd721e7eb9e78a8e128c14.bindPopup(popup_412789a90f1d0bcd753318a703ae8bd8)
+        ;
+
+        
+    
+    
+            var circle_marker_fdec1aa94fb7578d580b5c8fd1fe6ff8 = L.circleMarker(
+                [40.42875194444444, -79.98641805555556],
+                {"bubblingMouseEvents": true, "color": "#736d00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#736d00", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 26.0, "stroke": true, "weight": 3}
+            ).addTo(map_8b957c8cb0fb419129be6d91e604b65a);
+        
+    
+        var popup_4d7f5bf261a9ba173dcd7b65f276e150 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_e23fe11ae9ac01f97a7794fce177a936 = $(`<div id="html_e23fe11ae9ac01f97a7794fce177a936" style="width: 100.0%; height: 100.0%;">     <b>Intersection:</b> E CARSON ST; EAST CARSON ST; S 12TH ST<br>     <b>Total RTOR crashes:</b> 1<br>     <b>Severity score:</b> 5<br><br>      <b>Pedestrian serious injuries:</b> 0<br>     <b>Pedestrian deaths:</b> 0<br>      <b>Cyclist serious injuries:</b> 1<br>     <b>Cyclist deaths:</b> 0<br>     </div>`)[0];
+                popup_4d7f5bf261a9ba173dcd7b65f276e150.setContent(html_e23fe11ae9ac01f97a7794fce177a936);
+            
+        
+
+        circle_marker_fdec1aa94fb7578d580b5c8fd1fe6ff8.bindPopup(popup_4d7f5bf261a9ba173dcd7b65f276e150)
+        ;
+
+        
+    
+    
+            var circle_marker_4311ca136ba7edc74d0744f4ccff855d = L.circleMarker(
+                [40.42819027777777, -79.97116944444444],
+                {"bubblingMouseEvents": true, "color": "#17b500", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#17b500", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 26.0, "stroke": true, "weight": 3}
+            ).addTo(map_8b957c8cb0fb419129be6d91e604b65a);
+        
+    
+        var popup_c7847c97306aec917427c308fa563e92 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_b75e9cd2266755ad91a58e6e3211f699 = $(`<div id="html_b75e9cd2266755ad91a58e6e3211f699" style="width: 100.0%; height: 100.0%;">     <b>Intersection:</b> E CARSON ST; EAST CARSON ST; S 24TH ST<br>     <b>Total RTOR crashes:</b> 1<br>     <b>Severity score:</b> 1<br><br>      <b>Pedestrian serious injuries:</b> 0<br>     <b>Pedestrian deaths:</b> 0<br>      <b>Cyclist serious injuries:</b> 0<br>     <b>Cyclist deaths:</b> 0<br>     </div>`)[0];
+                popup_c7847c97306aec917427c308fa563e92.setContent(html_b75e9cd2266755ad91a58e6e3211f699);
+            
+        
+
+        circle_marker_4311ca136ba7edc74d0744f4ccff855d.bindPopup(popup_c7847c97306aec917427c308fa563e92)
+        ;
+
+        
+    
+    
+            var circle_marker_381ecaf285b82554b1a94b2b9f369fa0 = L.circleMarker(
+                [40.43103055555555, -80.00161694444445],
+                {"bubblingMouseEvents": true, "color": "#17b500", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#17b500", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 26.0, "stroke": true, "weight": 3}
+            ).addTo(map_8b957c8cb0fb419129be6d91e604b65a);
+        
+    
+        var popup_4d0ca4835208c8775023359ec8efa87b = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_bed98e550946a1b4856e33aa70a30221 = $(`<div id="html_bed98e550946a1b4856e33aa70a30221" style="width: 100.0%; height: 100.0%;">     <b>Intersection:</b> E CARSON ST; EAST CARSON ST; STATION SQUARE DR<br>     <b>Total RTOR crashes:</b> 1<br>     <b>Severity score:</b> 1<br><br>      <b>Pedestrian serious injuries:</b> 0<br>     <b>Pedestrian deaths:</b> 0<br>      <b>Cyclist serious injuries:</b> 0<br>     <b>Cyclist deaths:</b> 0<br>     </div>`)[0];
+                popup_4d0ca4835208c8775023359ec8efa87b.setContent(html_bed98e550946a1b4856e33aa70a30221);
+            
+        
+
+        circle_marker_381ecaf285b82554b1a94b2b9f369fa0.bindPopup(popup_4d0ca4835208c8775023359ec8efa87b)
+        ;
+
+        
+    
+    
+            var circle_marker_92e233887bb0c08229ae7722bb8faed1 = L.circleMarker(
+                [40.42851694444444, -79.97621833333334],
+                {"bubblingMouseEvents": true, "color": "#17b500", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#17b500", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 26.0, "stroke": true, "weight": 3}
+            ).addTo(map_8b957c8cb0fb419129be6d91e604b65a);
+        
+    
+        var popup_d501e11e3eb2d5a06f47dcd3946df781 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_d8b3049bc82dca61655c9edd9cfbc400 = $(`<div id="html_d8b3049bc82dca61655c9edd9cfbc400" style="width: 100.0%; height: 100.0%;">     <b>Intersection:</b> EAST CARSON ST; TWENTYFIRST ST<br>     <b>Total RTOR crashes:</b> 1<br>     <b>Severity score:</b> 1<br><br>      <b>Pedestrian serious injuries:</b> 0<br>     <b>Pedestrian deaths:</b> 0<br>      <b>Cyclist serious injuries:</b> 0<br>     <b>Cyclist deaths:</b> 0<br>     </div>`)[0];
+                popup_d501e11e3eb2d5a06f47dcd3946df781.setContent(html_d8b3049bc82dca61655c9edd9cfbc400);
+            
+        
+
+        circle_marker_92e233887bb0c08229ae7722bb8faed1.bindPopup(popup_d501e11e3eb2d5a06f47dcd3946df781)
+        ;
+
+        
+    
+    
+            var circle_marker_142b65e97a57f27cc0d57be56ff9c579 = L.circleMarker(
+                [40.42709444444444, -79.967055],
+                {"bubblingMouseEvents": true, "color": "#17b500", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#17b500", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 26.0, "stroke": true, "weight": 3}
+            ).addTo(map_8b957c8cb0fb419129be6d91e604b65a);
+        
+    
+        var popup_ce91f42ea91d427dfc8787a9d3b6b918 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_274cfc2915740c8bc13c7674d95bd4ee = $(`<div id="html_274cfc2915740c8bc13c7674d95bd4ee" style="width: 100.0%; height: 100.0%;">     <b>Intersection:</b> EAST CARSON ST; TWENTYSEVENTH ST<br>     <b>Total RTOR crashes:</b> 1<br>     <b>Severity score:</b> 1<br><br>      <b>Pedestrian serious injuries:</b> 0<br>     <b>Pedestrian deaths:</b> 0<br>      <b>Cyclist serious injuries:</b> 0<br>     <b>Cyclist deaths:</b> 0<br>     </div>`)[0];
+                popup_ce91f42ea91d427dfc8787a9d3b6b918.setContent(html_274cfc2915740c8bc13c7674d95bd4ee);
+            
+        
+
+        circle_marker_142b65e97a57f27cc0d57be56ff9c579.bindPopup(popup_ce91f42ea91d427dfc8787a9d3b6b918)
+        ;
+
+        
+    
+    
+            var circle_marker_ef801aa6b50367ae59f9e731f2fcdd68 = L.circleMarker(
+                [40.45737777777778, -79.9989811111111],
+                {"bubblingMouseEvents": true, "color": "#17b500", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#17b500", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 26.0, "stroke": true, "weight": 3}
+            ).addTo(map_8b957c8cb0fb419129be6d91e604b65a);
+        
+    
+        var popup_a7b9fd5d74a02933e87cc6611c93ee0d = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_3001386319d0779fcd30f062b64c0553 = $(`<div id="html_3001386319d0779fcd30f062b64c0553" style="width: 100.0%; height: 100.0%;">     <b>Intersection:</b> EAST ST; NORTH AV<br>     <b>Total RTOR crashes:</b> 1<br>     <b>Severity score:</b> 1<br><br>      <b>Pedestrian serious injuries:</b> 0<br>     <b>Pedestrian deaths:</b> 0<br>      <b>Cyclist serious injuries:</b> 0<br>     <b>Cyclist deaths:</b> 0<br>     </div>`)[0];
+                popup_a7b9fd5d74a02933e87cc6611c93ee0d.setContent(html_3001386319d0779fcd30f062b64c0553);
+            
+        
+
+        circle_marker_ef801aa6b50367ae59f9e731f2fcdd68.bindPopup(popup_a7b9fd5d74a02933e87cc6611c93ee0d)
+        ;
+
+        
+    
+    
+            var circle_marker_796ed40f946b5c33fd6e15785a3c4763 = L.circleMarker(
+                [40.40833111111111, -79.89420333333334],
+                {"bubblingMouseEvents": true, "color": "#17b500", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#17b500", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 26.0, "stroke": true, "weight": 3}
+            ).addTo(map_8b957c8cb0fb419129be6d91e604b65a);
+        
+    
+        var popup_b279c8ebf60acbefce141d328d6e02cf = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_268252cffc53d90780170375089efd24 = $(`<div id="html_268252cffc53d90780170375089efd24" style="width: 100.0%; height: 100.0%;">     <b>Intersection:</b> EIGHTH AV; WHITAKER WY<br>     <b>Total RTOR crashes:</b> 1<br>     <b>Severity score:</b> 1<br><br>      <b>Pedestrian serious injuries:</b> 0<br>     <b>Pedestrian deaths:</b> 0<br>      <b>Cyclist serious injuries:</b> 0<br>     <b>Cyclist deaths:</b> 0<br>     </div>`)[0];
+                popup_b279c8ebf60acbefce141d328d6e02cf.setContent(html_268252cffc53d90780170375089efd24);
+            
+        
+
+        circle_marker_796ed40f946b5c33fd6e15785a3c4763.bindPopup(popup_b279c8ebf60acbefce141d328d6e02cf)
+        ;
+
+        
+    
+    
+            var circle_marker_25a4d1b1d5ee69a2e76cf7edc068685f = L.circleMarker(
+                [40.44827083333333, -80.00428777777778],
+                {"bubblingMouseEvents": true, "color": "#17b500", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#17b500", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 26.0, "stroke": true, "weight": 3}
+            ).addTo(map_8b957c8cb0fb419129be6d91e604b65a);
+        
+    
+        var popup_d87637ee2c0893c44c504ec6c9ae7829 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_1493ba0203e563f8648f4f08c61a1709 = $(`<div id="html_1493ba0203e563f8648f4f08c61a1709" style="width: 100.0%; height: 100.0%;">     <b>Intersection:</b> FEDERAL ST; W GENERAL ROBINSON ST<br>     <b>Total RTOR crashes:</b> 1<br>     <b>Severity score:</b> 1<br><br>      <b>Pedestrian serious injuries:</b> 0<br>     <b>Pedestrian deaths:</b> 0<br>      <b>Cyclist serious injuries:</b> 0<br>     <b>Cyclist deaths:</b> 0<br>     </div>`)[0];
+                popup_d87637ee2c0893c44c504ec6c9ae7829.setContent(html_1493ba0203e563f8648f4f08c61a1709);
+            
+        
+
+        circle_marker_25a4d1b1d5ee69a2e76cf7edc068685f.bindPopup(popup_d87637ee2c0893c44c504ec6c9ae7829)
+        ;
+
+        
+    
+    
+            var circle_marker_d0a5a5c81db950becf8b8fdd128aefe1 = L.circleMarker(
+                [40.43850027777778, -79.96117083333334],
+                {"bubblingMouseEvents": true, "color": "#17b500", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#17b500", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 26.0, "stroke": true, "weight": 3}
+            ).addTo(map_8b957c8cb0fb419129be6d91e604b65a);
+        
+    
+        var popup_f5facd48d05d93f9fb7274910507aff7 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_ce08768fed175eb4b616cbe296067f3b = $(`<div id="html_ce08768fed175eb4b616cbe296067f3b" style="width: 100.0%; height: 100.0%;">     <b>Intersection:</b> FORBES AV; MAGEE ST<br>     <b>Total RTOR crashes:</b> 1<br>     <b>Severity score:</b> 1<br><br>      <b>Pedestrian serious injuries:</b> 0<br>     <b>Pedestrian deaths:</b> 0<br>      <b>Cyclist serious injuries:</b> 0<br>     <b>Cyclist deaths:</b> 0<br>     </div>`)[0];
+                popup_f5facd48d05d93f9fb7274910507aff7.setContent(html_ce08768fed175eb4b616cbe296067f3b);
+            
+        
+
+        circle_marker_d0a5a5c81db950becf8b8fdd128aefe1.bindPopup(popup_f5facd48d05d93f9fb7274910507aff7)
+        ;
+
+        
+    
+    
+            var circle_marker_e276c1a132f80903e7846a99e6b8b9e2 = L.circleMarker(
+                [40.43796083333333, -79.99105888888889],
+                {"bubblingMouseEvents": true, "color": "#2ea300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ea300", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 46.0, "stroke": true, "weight": 3}
+            ).addTo(map_8b957c8cb0fb419129be6d91e604b65a);
+        
+    
+        var popup_9885858528cd14f59796ca0ae7003035 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_40ef06846984da9e4dfac4bbb92f1c97 = $(`<div id="html_40ef06846984da9e4dfac4bbb92f1c97" style="width: 100.0%; height: 100.0%;">     <b>Intersection:</b> FORBES AV; MCANULTY DR<br>     <b>Total RTOR crashes:</b> 2<br>     <b>Severity score:</b> 2<br><br>      <b>Pedestrian serious injuries:</b> 0<br>     <b>Pedestrian deaths:</b> 0<br>      <b>Cyclist serious injuries:</b> 0<br>     <b>Cyclist deaths:</b> 0<br>     </div>`)[0];
+                popup_9885858528cd14f59796ca0ae7003035.setContent(html_40ef06846984da9e4dfac4bbb92f1c97);
+            
+        
+
+        circle_marker_e276c1a132f80903e7846a99e6b8b9e2.bindPopup(popup_9885858528cd14f59796ca0ae7003035)
+        ;
+
+        
+    
+    
+            var circle_marker_5090304c88907d62da56409aede76213 = L.circleMarker(
+                [40.44389722222222, -79.95078638888889],
+                {"bubblingMouseEvents": true, "color": "#17b500", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#17b500", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 26.0, "stroke": true, "weight": 3}
+            ).addTo(map_8b957c8cb0fb419129be6d91e604b65a);
+        
+    
+        var popup_1c90794731d090d7faa150a7b24b7ea6 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_94cc514b6fb89ca4b22c7a501cf18983 = $(`<div id="html_94cc514b6fb89ca4b22c7a501cf18983" style="width: 100.0%; height: 100.0%;">     <b>Intersection:</b> FORBES AV; S BELLEFIELD AV<br>     <b>Total RTOR crashes:</b> 1<br>     <b>Severity score:</b> 1<br><br>      <b>Pedestrian serious injuries:</b> 0<br>     <b>Pedestrian deaths:</b> 0<br>      <b>Cyclist serious injuries:</b> 0<br>     <b>Cyclist deaths:</b> 0<br>     </div>`)[0];
+                popup_1c90794731d090d7faa150a7b24b7ea6.setContent(html_94cc514b6fb89ca4b22c7a501cf18983);
+            
+        
+
+        circle_marker_5090304c88907d62da56409aede76213.bindPopup(popup_1c90794731d090d7faa150a7b24b7ea6)
+        ;
+
+        
+    
+    
+            var circle_marker_4c3236fa4bc9c384340798852da45d13 = L.circleMarker(
+                [40.438044722222216, -79.927695],
+                {"bubblingMouseEvents": true, "color": "#17b500", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#17b500", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 26.0, "stroke": true, "weight": 3}
+            ).addTo(map_8b957c8cb0fb419129be6d91e604b65a);
+        
+    
+        var popup_755cad9882b7cb0e25a3bd4cb6eac997 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_384e523b4cac38c3abbd9f70957a0271 = $(`<div id="html_384e523b4cac38c3abbd9f70957a0271" style="width: 100.0%; height: 100.0%;">     <b>Intersection:</b> FORBES AV; WIGHTMAN ST<br>     <b>Total RTOR crashes:</b> 1<br>     <b>Severity score:</b> 1<br><br>      <b>Pedestrian serious injuries:</b> 0<br>     <b>Pedestrian deaths:</b> 0<br>      <b>Cyclist serious injuries:</b> 0<br>     <b>Cyclist deaths:</b> 0<br>     </div>`)[0];
+                popup_755cad9882b7cb0e25a3bd4cb6eac997.setContent(html_384e523b4cac38c3abbd9f70957a0271);
+            
+        
+
+        circle_marker_4c3236fa4bc9c384340798852da45d13.bindPopup(popup_755cad9882b7cb0e25a3bd4cb6eac997)
+        ;
+
+        
+    
+    
+            var circle_marker_4bd630400d5d742ae35baf1eb82acb0d = L.circleMarker(
+                [40.43673611111111, -80.00088833333334],
+                {"bubblingMouseEvents": true, "color": "#17b500", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#17b500", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 26.0, "stroke": true, "weight": 3}
+            ).addTo(map_8b957c8cb0fb419129be6d91e604b65a);
+        
+    
+        var popup_37bdec4b292c304e1f293d13112e49c8 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_97983a6ef45119b85b4399407a129774 = $(`<div id="html_97983a6ef45119b85b4399407a129774" style="width: 100.0%; height: 100.0%;">     <b>Intersection:</b> FORT PITT BL; GRANT ST INT/RP A RD; SMITHFIELD ST; SMITHFIELD ST BR<br>     <b>Total RTOR crashes:</b> 1<br>     <b>Severity score:</b> 1<br><br>      <b>Pedestrian serious injuries:</b> 0<br>     <b>Pedestrian deaths:</b> 0<br>      <b>Cyclist serious injuries:</b> 0<br>     <b>Cyclist deaths:</b> 0<br>     </div>`)[0];
+                popup_37bdec4b292c304e1f293d13112e49c8.setContent(html_97983a6ef45119b85b4399407a129774);
+            
+        
+
+        circle_marker_4bd630400d5d742ae35baf1eb82acb0d.bindPopup(popup_37bdec4b292c304e1f293d13112e49c8)
+        ;
+
+        
+    
+    
+            var circle_marker_94b7568c21039f80cba4df9396291a6f = L.circleMarker(
+                [40.43642444444444, -80.00108861111111],
+                {"bubblingMouseEvents": true, "color": "#17b500", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#17b500", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 26.0, "stroke": true, "weight": 3}
+            ).addTo(map_8b957c8cb0fb419129be6d91e604b65a);
+        
+    
+        var popup_70b8f7b3bfcd9537772d7f0f381d560c = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_d4e0c5d7bf59e61ec55dd261ce97c432 = $(`<div id="html_d4e0c5d7bf59e61ec55dd261ce97c432" style="width: 100.0%; height: 100.0%;">     <b>Intersection:</b> FORT PITT BL; GRANT ST INT/RP B RD; SMITHFIELD ST; SMITHFIELD ST BR<br>     <b>Total RTOR crashes:</b> 1<br>     <b>Severity score:</b> 1<br><br>      <b>Pedestrian serious injuries:</b> 0<br>     <b>Pedestrian deaths:</b> 0<br>      <b>Cyclist serious injuries:</b> 0<br>     <b>Cyclist deaths:</b> 0<br>     </div>`)[0];
+                popup_70b8f7b3bfcd9537772d7f0f381d560c.setContent(html_d4e0c5d7bf59e61ec55dd261ce97c432);
+            
+        
+
+        circle_marker_94b7568c21039f80cba4df9396291a6f.bindPopup(popup_70b8f7b3bfcd9537772d7f0f381d560c)
+        ;
+
+        
+    
+    
+            var circle_marker_f7a2f689941fe0dae84fab6e1fe2685d = L.circleMarker(
+                [40.43666916666666, -80.00093138888889],
+                {"bubblingMouseEvents": true, "color": "#17b500", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#17b500", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 26.0, "stroke": true, "weight": 3}
+            ).addTo(map_8b957c8cb0fb419129be6d91e604b65a);
+        
+    
+        var popup_234f75a4cf7e99a28c4081e08a370f4d = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_a83d4683c240acf8b480a9f467bb7cab = $(`<div id="html_a83d4683c240acf8b480a9f467bb7cab" style="width: 100.0%; height: 100.0%;">     <b>Intersection:</b> FORT PITT BL; SMITHFIELD BR<br>     <b>Total RTOR crashes:</b> 1<br>     <b>Severity score:</b> 1<br><br>      <b>Pedestrian serious injuries:</b> 0<br>     <b>Pedestrian deaths:</b> 0<br>      <b>Cyclist serious injuries:</b> 0<br>     <b>Cyclist deaths:</b> 0<br>     </div>`)[0];
+                popup_234f75a4cf7e99a28c4081e08a370f4d.setContent(html_a83d4683c240acf8b480a9f467bb7cab);
+            
+        
+
+        circle_marker_f7a2f689941fe0dae84fab6e1fe2685d.bindPopup(popup_234f75a4cf7e99a28c4081e08a370f4d)
+        ;
+
+        
+    
+    
+            var circle_marker_566d68306c1eb6246c83f55e620fb14a = L.circleMarker(
+                [40.517759166666664, -80.16200083333334],
+                {"bubblingMouseEvents": true, "color": "#17b500", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#17b500", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 26.0, "stroke": true, "weight": 3}
+            ).addTo(map_8b957c8cb0fb419129be6d91e604b65a);
+        
+    
+        var popup_867aceefcaa7a03ed9df0fb765fe5229 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_3fac8980ce8b497985d71bb86a270f81 = $(`<div id="html_3fac8980ce8b497985d71bb86a270f81" style="width: 100.0%; height: 100.0%;">     <b>Intersection:</b> FOURTH AV; MULBERRY ST<br>     <b>Total RTOR crashes:</b> 1<br>     <b>Severity score:</b> 1<br><br>      <b>Pedestrian serious injuries:</b> 0<br>     <b>Pedestrian deaths:</b> 0<br>      <b>Cyclist serious injuries:</b> 0<br>     <b>Cyclist deaths:</b> 0<br>     </div>`)[0];
+                popup_867aceefcaa7a03ed9df0fb765fe5229.setContent(html_3fac8980ce8b497985d71bb86a270f81);
+            
+        
+
+        circle_marker_566d68306c1eb6246c83f55e620fb14a.bindPopup(popup_867aceefcaa7a03ed9df0fb765fe5229)
+        ;
+
+        
+    
+    
+            var circle_marker_63b9288d7d53d6a1cf05150d2371322d = L.circleMarker(
+                [40.45740388888889, -79.8962838888889],
+                {"bubblingMouseEvents": true, "color": "#17b500", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#17b500", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 26.0, "stroke": true, "weight": 3}
+            ).addTo(map_8b957c8cb0fb419129be6d91e604b65a);
+        
+    
+        var popup_2ee1e50a930fa4453b776556212e5aaa = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_c715424a8a8b3fca46e601413486d1f5 = $(`<div id="html_c715424a8a8b3fca46e601413486d1f5" style="width: 100.0%; height: 100.0%;">     <b>Intersection:</b> FRANKSTOWN AV; N HOMEWOOD AV<br>     <b>Total RTOR crashes:</b> 1<br>     <b>Severity score:</b> 1<br><br>      <b>Pedestrian serious injuries:</b> 0<br>     <b>Pedestrian deaths:</b> 0<br>      <b>Cyclist serious injuries:</b> 0<br>     <b>Cyclist deaths:</b> 0<br>     </div>`)[0];
+                popup_2ee1e50a930fa4453b776556212e5aaa.setContent(html_c715424a8a8b3fca46e601413486d1f5);
+            
+        
+
+        circle_marker_63b9288d7d53d6a1cf05150d2371322d.bindPopup(popup_2ee1e50a930fa4453b776556212e5aaa)
+        ;
+
+        
+    
+    
+            var circle_marker_a9a212822d7bf7be2ef1ddce3ae8b2a1 = L.circleMarker(
+                [40.46105722222222, -79.86633055555555],
+                {"bubblingMouseEvents": true, "color": "#17b500", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#17b500", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 26.0, "stroke": true, "weight": 3}
+            ).addTo(map_8b957c8cb0fb419129be6d91e604b65a);
+        
+    
+        var popup_4a72ed80436b64a45501497cd6138a56 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_7428c44d2705046bf64ede240b895bfe = $(`<div id="html_7428c44d2705046bf64ede240b895bfe" style="width: 100.0%; height: 100.0%;">     <b>Intersection:</b> FRANKSTOWN RD; VERONA RD<br>     <b>Total RTOR crashes:</b> 1<br>     <b>Severity score:</b> 1<br><br>      <b>Pedestrian serious injuries:</b> 0<br>     <b>Pedestrian deaths:</b> 0<br>      <b>Cyclist serious injuries:</b> 0<br>     <b>Cyclist deaths:</b> 0<br>     </div>`)[0];
+                popup_4a72ed80436b64a45501497cd6138a56.setContent(html_7428c44d2705046bf64ede240b895bfe);
+            
+        
+
+        circle_marker_a9a212822d7bf7be2ef1ddce3ae8b2a1.bindPopup(popup_4a72ed80436b64a45501497cd6138a56)
+        ;
+
+        
+    
+    
+            var circle_marker_af8e2db5e163b434db01e57981a2a79d = L.circleMarker(
+                [40.466161944444444, -79.95224777777779],
+                {"bubblingMouseEvents": true, "color": "#17b500", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#17b500", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 26.0, "stroke": true, "weight": 3}
+            ).addTo(map_8b957c8cb0fb419129be6d91e604b65a);
+        
+    
+        var popup_61b5d09ba6aac67ccbc9f79cbc190801 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_bec9ed44b1c9daef8190f879ad223136 = $(`<div id="html_bec9ed44b1c9daef8190f879ad223136" style="width: 100.0%; height: 100.0%;">     <b>Intersection:</b> FRIENDSHIP AV; PENN AV<br>     <b>Total RTOR crashes:</b> 1<br>     <b>Severity score:</b> 1<br><br>      <b>Pedestrian serious injuries:</b> 0<br>     <b>Pedestrian deaths:</b> 0<br>      <b>Cyclist serious injuries:</b> 0<br>     <b>Cyclist deaths:</b> 0<br>     </div>`)[0];
+                popup_61b5d09ba6aac67ccbc9f79cbc190801.setContent(html_bec9ed44b1c9daef8190f879ad223136);
+            
+        
+
+        circle_marker_af8e2db5e163b434db01e57981a2a79d.bindPopup(popup_61b5d09ba6aac67ccbc9f79cbc190801)
+        ;
+
+        
+    
+    
+            var circle_marker_7f8363ddfa28c2ed1f93ff44de1e5a2e = L.circleMarker(
+                [40.42988166666667, -79.75127388888889],
+                {"bubblingMouseEvents": true, "color": "#17b500", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#17b500", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 26.0, "stroke": true, "weight": 3}
+            ).addTo(map_8b957c8cb0fb419129be6d91e604b65a);
+        
+    
+        var popup_944907bef999a51124b23bdea8aa35fc = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_98bfa598722a59dc85946703f5fe278c = $(`<div id="html_98bfa598722a59dc85946703f5fe278c" style="width: 100.0%; height: 100.0%;">     <b>Intersection:</b> GATEWAY CAMPUS BL; HAYMAKER RD; MOSSIDE BL<br>     <b>Total RTOR crashes:</b> 1<br>     <b>Severity score:</b> 1<br><br>      <b>Pedestrian serious injuries:</b> 0<br>     <b>Pedestrian deaths:</b> 0<br>      <b>Cyclist serious injuries:</b> 0<br>     <b>Cyclist deaths:</b> 0<br>     </div>`)[0];
+                popup_944907bef999a51124b23bdea8aa35fc.setContent(html_98bfa598722a59dc85946703f5fe278c);
+            
+        
+
+        circle_marker_7f8363ddfa28c2ed1f93ff44de1e5a2e.bindPopup(popup_944907bef999a51124b23bdea8aa35fc)
+        ;
+
+        
+    
+    
+            var circle_marker_9d28ce73f7536d373f8f88ca603bd51a = L.circleMarker(
+                [40.45082, -79.71359111111111],
+                {"bubblingMouseEvents": true, "color": "#17b500", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#17b500", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 26.0, "stroke": true, "weight": 3}
+            ).addTo(map_8b957c8cb0fb419129be6d91e604b65a);
+        
+    
+        var popup_8596c44352da07eaeb4c608a76d64d25 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_c3b1265e7ac2d2b09829b70073ecbace = $(`<div id="html_c3b1265e7ac2d2b09829b70073ecbace" style="width: 100.0%; height: 100.0%;">     <b>Intersection:</b> GOLDEN MILE HW; NEW TEXAS RD<br>     <b>Total RTOR crashes:</b> 1<br>     <b>Severity score:</b> 1<br><br>      <b>Pedestrian serious injuries:</b> 0<br>     <b>Pedestrian deaths:</b> 0<br>      <b>Cyclist serious injuries:</b> 0<br>     <b>Cyclist deaths:</b> 0<br>     </div>`)[0];
+                popup_8596c44352da07eaeb4c608a76d64d25.setContent(html_c3b1265e7ac2d2b09829b70073ecbace);
+            
+        
+
+        circle_marker_9d28ce73f7536d373f8f88ca603bd51a.bindPopup(popup_8596c44352da07eaeb4c608a76d64d25)
+        ;
+
+        
+    
+    
+            var circle_marker_81937186a74ba06bc052888096b2bf94 = L.circleMarker(
+                [40.38011111111111, -79.80905555555556],
+                {"bubblingMouseEvents": true, "color": "#17b500", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#17b500", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 26.0, "stroke": true, "weight": 3}
+            ).addTo(map_8b957c8cb0fb419129be6d91e604b65a);
+        
+    
+        var popup_972ad3715c4ff7fdc8f6778599721248 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_3a0a1ba0e9ca6eccd74d97b7f6938d32 = $(`<div id="html_3a0a1ba0e9ca6eccd74d97b7f6938d32" style="width: 100.0%; height: 100.0%;">     <b>Intersection:</b> GRAHAM BL; LINCOLN HW<br>     <b>Total RTOR crashes:</b> 1<br>     <b>Severity score:</b> 1<br><br>      <b>Pedestrian serious injuries:</b> 0<br>     <b>Pedestrian deaths:</b> 0<br>      <b>Cyclist serious injuries:</b> 0<br>     <b>Cyclist deaths:</b> 0<br>     </div>`)[0];
+                popup_972ad3715c4ff7fdc8f6778599721248.setContent(html_3a0a1ba0e9ca6eccd74d97b7f6938d32);
+            
+        
+
+        circle_marker_81937186a74ba06bc052888096b2bf94.bindPopup(popup_972ad3715c4ff7fdc8f6778599721248)
+        ;
+
+        
+    
+    
+            var circle_marker_9e487428289d3b5462f07484a143adad = L.circleMarker(
+                [40.404803888888885, -79.82590583333332],
+                {"bubblingMouseEvents": true, "color": "#17b500", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#17b500", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 26.0, "stroke": true, "weight": 3}
+            ).addTo(map_8b957c8cb0fb419129be6d91e604b65a);
+        
+    
+        var popup_631775199d100c9b7701032f44c91ad5 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_72238598c1cbc1f87e37e193e097ce7a = $(`<div id="html_72238598c1cbc1f87e37e193e097ce7a" style="width: 100.0%; height: 100.0%;">     <b>Intersection:</b> GRANT ST; PENN AV<br>     <b>Total RTOR crashes:</b> 1<br>     <b>Severity score:</b> 1<br><br>      <b>Pedestrian serious injuries:</b> 0<br>     <b>Pedestrian deaths:</b> 0<br>      <b>Cyclist serious injuries:</b> 0<br>     <b>Cyclist deaths:</b> 0<br>     </div>`)[0];
+                popup_631775199d100c9b7701032f44c91ad5.setContent(html_72238598c1cbc1f87e37e193e097ce7a);
+            
+        
+
+        circle_marker_9e487428289d3b5462f07484a143adad.bindPopup(popup_631775199d100c9b7701032f44c91ad5)
+        ;
+
+        
+    
+    
+            var circle_marker_8b5722be5d302d8eafc99454e24d4320 = L.circleMarker(
+                [40.38764138888889, -80.09096444444444],
+                {"bubblingMouseEvents": true, "color": "#17b500", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#17b500", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 26.0, "stroke": true, "weight": 3}
+            ).addTo(map_8b957c8cb0fb419129be6d91e604b65a);
+        
+    
+        var popup_7654ab4bb52e18154caedc018b6937aa = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_741bc3f5b94b470ef6224a40d841aea1 = $(`<div id="html_741bc3f5b94b470ef6224a40d841aea1" style="width: 100.0%; height: 100.0%;">     <b>Intersection:</b> GREENTREE RD; WASHINGTON PK<br>     <b>Total RTOR crashes:</b> 1<br>     <b>Severity score:</b> 1<br><br>      <b>Pedestrian serious injuries:</b> 0<br>     <b>Pedestrian deaths:</b> 0<br>      <b>Cyclist serious injuries:</b> 0<br>     <b>Cyclist deaths:</b> 0<br>     </div>`)[0];
+                popup_7654ab4bb52e18154caedc018b6937aa.setContent(html_741bc3f5b94b470ef6224a40d841aea1);
+            
+        
+
+        circle_marker_8b5722be5d302d8eafc99454e24d4320.bindPopup(popup_7654ab4bb52e18154caedc018b6937aa)
+        ;
+
+        
+    
+    
+            var circle_marker_81fae62c14d747e42860f199bb20f0c2 = L.circleMarker(
+                [40.43887055555555, -79.76062777777778],
+                {"bubblingMouseEvents": true, "color": "#17b500", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#17b500", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 26.0, "stroke": true, "weight": 3}
+            ).addTo(map_8b957c8cb0fb419129be6d91e604b65a);
+        
+    
+        var popup_ff9d58bfef3edf6b44cceb6a4297a745 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_1ba0f1ae14c2fcf97b8d1c5342a60dd2 = $(`<div id="html_1ba0f1ae14c2fcf97b8d1c5342a60dd2" style="width: 100.0%; height: 100.0%;">     <b>Intersection:</b> HAYMAKER RD; MOSSIDE BL; WILLIAM PENN HW<br>     <b>Total RTOR crashes:</b> 1<br>     <b>Severity score:</b> 1<br><br>      <b>Pedestrian serious injuries:</b> 0<br>     <b>Pedestrian deaths:</b> 0<br>      <b>Cyclist serious injuries:</b> 0<br>     <b>Cyclist deaths:</b> 0<br>     </div>`)[0];
+                popup_ff9d58bfef3edf6b44cceb6a4297a745.setContent(html_1ba0f1ae14c2fcf97b8d1c5342a60dd2);
+            
+        
+
+        circle_marker_81fae62c14d747e42860f199bb20f0c2.bindPopup(popup_ff9d58bfef3edf6b44cceb6a4297a745)
+        ;
+
+        
+    
+    
+            var circle_marker_aa685877da1fe4af4ca1fae39f8c7df7 = L.circleMarker(
+                [40.30810527777778, -80.03277277777778],
+                {"bubblingMouseEvents": true, "color": "#17b500", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#17b500", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 26.0, "stroke": true, "weight": 3}
+            ).addTo(map_8b957c8cb0fb419129be6d91e604b65a);
+        
+    
+        var popup_5bb6780403199aca69a0f2ca6c59c450 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_fd8794427e32c61888deb4959856178a = $(`<div id="html_fd8794427e32c61888deb4959856178a" style="width: 100.0%; height: 100.0%;">     <b>Intersection:</b> KINGS SCHOOL RD; LIBRARY RD<br>     <b>Total RTOR crashes:</b> 1<br>     <b>Severity score:</b> 1<br><br>      <b>Pedestrian serious injuries:</b> 0<br>     <b>Pedestrian deaths:</b> 0<br>      <b>Cyclist serious injuries:</b> 0<br>     <b>Cyclist deaths:</b> 0<br>     </div>`)[0];
+                popup_5bb6780403199aca69a0f2ca6c59c450.setContent(html_fd8794427e32c61888deb4959856178a);
+            
+        
+
+        circle_marker_aa685877da1fe4af4ca1fae39f8c7df7.bindPopup(popup_5bb6780403199aca69a0f2ca6c59c450)
+        ;
+
+        
+    
+    
+            var circle_marker_66a03b17bb8834524587afc2ddb352ff = L.circleMarker(
+                [40.42167, -80.04991388888888],
+                {"bubblingMouseEvents": true, "color": "#17b500", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#17b500", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 26.0, "stroke": true, "weight": 3}
+            ).addTo(map_8b957c8cb0fb419129be6d91e604b65a);
+        
+    
+        var popup_6ee36f973debc54658e3036a66b33cec = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_145123b2a997850374bdb4acbb2ed347 = $(`<div id="html_145123b2a997850374bdb4acbb2ed347" style="width: 100.0%; height: 100.0%;">     <b>Intersection:</b> MANSFIELD AV; POPLAR ST<br>     <b>Total RTOR crashes:</b> 1<br>     <b>Severity score:</b> 1<br><br>      <b>Pedestrian serious injuries:</b> 0<br>     <b>Pedestrian deaths:</b> 0<br>      <b>Cyclist serious injuries:</b> 0<br>     <b>Cyclist deaths:</b> 0<br>     </div>`)[0];
+                popup_6ee36f973debc54658e3036a66b33cec.setContent(html_145123b2a997850374bdb4acbb2ed347);
+            
+        
+
+        circle_marker_66a03b17bb8834524587afc2ddb352ff.bindPopup(popup_6ee36f973debc54658e3036a66b33cec)
+        ;
+
+        
+    
+    
+            var circle_marker_47e9d3d68fac91ea853b4018a943dabc = L.circleMarker(
+                [40.45887638888889, -80.17216],
+                {"bubblingMouseEvents": true, "color": "#17b500", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#17b500", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 26.0, "stroke": true, "weight": 3}
+            ).addTo(map_8b957c8cb0fb419129be6d91e604b65a);
+        
+    
+        var popup_1025a380f2351dde07e935234af9f8c6 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_b4b5f8b4a20609e216c27cec2fc81588 = $(`<div id="html_b4b5f8b4a20609e216c27cec2fc81588" style="width: 100.0%; height: 100.0%;">     <b>Intersection:</b> MONTOUR RUN RD; PARK MANOR BL; RPS DR<br>     <b>Total RTOR crashes:</b> 1<br>     <b>Severity score:</b> 1<br><br>      <b>Pedestrian serious injuries:</b> 0<br>     <b>Pedestrian deaths:</b> 0<br>      <b>Cyclist serious injuries:</b> 0<br>     <b>Cyclist deaths:</b> 0<br>     </div>`)[0];
+                popup_1025a380f2351dde07e935234af9f8c6.setContent(html_b4b5f8b4a20609e216c27cec2fc81588);
+            
+        
+
+        circle_marker_47e9d3d68fac91ea853b4018a943dabc.bindPopup(popup_1025a380f2351dde07e935234af9f8c6)
+        ;
+
+        
+    
+    
+            var circle_marker_6e3033465440353fc6ee7446586416c8 = L.circleMarker(
+                [40.45588388888889, -80.00460194444445],
+                {"bubblingMouseEvents": true, "color": "#17b500", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#17b500", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 26.0, "stroke": true, "weight": 3}
+            ).addTo(map_8b957c8cb0fb419129be6d91e604b65a);
+        
+    
+        var popup_ca91c65d17eabe383360c429a78c5ec3 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_9c19f79edd86d14511a364c4877b8bc6 = $(`<div id="html_9c19f79edd86d14511a364c4877b8bc6" style="width: 100.0%; height: 100.0%;">     <b>Intersection:</b> NORTH AV; SANDUSKY ST<br>     <b>Total RTOR crashes:</b> 1<br>     <b>Severity score:</b> 1<br><br>      <b>Pedestrian serious injuries:</b> 0<br>     <b>Pedestrian deaths:</b> 0<br>      <b>Cyclist serious injuries:</b> 0<br>     <b>Cyclist deaths:</b> 0<br>     </div>`)[0];
+                popup_ca91c65d17eabe383360c429a78c5ec3.setContent(html_9c19f79edd86d14511a364c4877b8bc6);
+            
+        
+
+        circle_marker_6e3033465440353fc6ee7446586416c8.bindPopup(popup_ca91c65d17eabe383360c429a78c5ec3)
+        ;
+
+        
+    
+    
+            var circle_marker_79650f2400bfa0229526c80deb5d4168 = L.circleMarker(
+                [40.43959638888889, -80.00504527777778],
+                {"bubblingMouseEvents": true, "color": "#17b500", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#17b500", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 26.0, "stroke": true, "weight": 3}
+            ).addTo(map_8b957c8cb0fb419129be6d91e604b65a);
+        
+    
+        var popup_66bb3b0bacd200d1f47221794cd34575 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_072a525cb46cea05c2df9f5732815e1a = $(`<div id="html_072a525cb46cea05c2df9f5732815e1a" style="width: 100.0%; height: 100.0%;">     <b>Intersection:</b> OF THE ALLIES BL; STANWIX ST<br>     <b>Total RTOR crashes:</b> 1<br>     <b>Severity score:</b> 1<br><br>      <b>Pedestrian serious injuries:</b> 0<br>     <b>Pedestrian deaths:</b> 0<br>      <b>Cyclist serious injuries:</b> 0<br>     <b>Cyclist deaths:</b> 0<br>     </div>`)[0];
+                popup_66bb3b0bacd200d1f47221794cd34575.setContent(html_072a525cb46cea05c2df9f5732815e1a);
+            
+        
+
+        circle_marker_79650f2400bfa0229526c80deb5d4168.bindPopup(popup_66bb3b0bacd200d1f47221794cd34575)
+        ;
+
+        
+    
+    
+            var circle_marker_35e2e2a9ccbf1068d5252241ccd3cb9a = L.circleMarker(
+                [40.45614527777778, -79.91539333333334],
+                {"bubblingMouseEvents": true, "color": "#17b500", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#17b500", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 26.0, "stroke": true, "weight": 3}
+            ).addTo(map_8b957c8cb0fb419129be6d91e604b65a);
+        
+    
+        var popup_73b2e28b5c289d965a1ef9114d87a79f = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_b48483e8decf9fe7c4d818ef16b0f4ec = $(`<div id="html_b48483e8decf9fe7c4d818ef16b0f4ec" style="width: 100.0%; height: 100.0%;">     <b>Intersection:</b> PENN AV<br>     <b>Total RTOR crashes:</b> 1<br>     <b>Severity score:</b> 1<br><br>      <b>Pedestrian serious injuries:</b> 0<br>     <b>Pedestrian deaths:</b> 0<br>      <b>Cyclist serious injuries:</b> 0<br>     <b>Cyclist deaths:</b> 0<br>     </div>`)[0];
+                popup_73b2e28b5c289d965a1ef9114d87a79f.setContent(html_b48483e8decf9fe7c4d818ef16b0f4ec);
+            
+        
+
+        circle_marker_35e2e2a9ccbf1068d5252241ccd3cb9a.bindPopup(popup_73b2e28b5c289d965a1ef9114d87a79f)
+        ;
+
+        
+    
+    
+            var circle_marker_ee23b7b6a28f3f2daac3d0d2dc2e322c = L.circleMarker(
+                [40.448808888888884, -79.98753388888889],
+                {"bubblingMouseEvents": true, "color": "#17b500", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#17b500", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 26.0, "stroke": true, "weight": 3}
+            ).addTo(map_8b957c8cb0fb419129be6d91e604b65a);
+        
+    
+        var popup_57cfb5839811b49ee5ab788a4d7fe511 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_641b36bb205c3b299b6799000084a908 = $(`<div id="html_641b36bb205c3b299b6799000084a908" style="width: 100.0%; height: 100.0%;">     <b>Intersection:</b> PENN AV; SIXTEENTH ST<br>     <b>Total RTOR crashes:</b> 1<br>     <b>Severity score:</b> 1<br><br>      <b>Pedestrian serious injuries:</b> 0<br>     <b>Pedestrian deaths:</b> 0<br>      <b>Cyclist serious injuries:</b> 0<br>     <b>Cyclist deaths:</b> 0<br>     </div>`)[0];
+                popup_57cfb5839811b49ee5ab788a4d7fe511.setContent(html_641b36bb205c3b299b6799000084a908);
+            
+        
+
+        circle_marker_ee23b7b6a28f3f2daac3d0d2dc2e322c.bindPopup(popup_57cfb5839811b49ee5ab788a4d7fe511)
+        ;
+
+        
+    
+    
+            var circle_marker_ebddc5dd23ff11f7452c0b254ca5a769 = L.circleMarker(
+                [40.45268138888889, -79.91037],
+                {"bubblingMouseEvents": true, "color": "#17b500", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#17b500", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 26.0, "stroke": true, "weight": 3}
+            ).addTo(map_8b957c8cb0fb419129be6d91e604b65a);
+        
+    
+        var popup_be5e36a0daf5ffabaaa815c120e21893 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_8941c97f8716b45772157e19e0738e21 = $(`<div id="html_8941c97f8716b45772157e19e0738e21" style="width: 100.0%; height: 100.0%;">     <b>Intersection:</b> PENN AV; SOUTH LINDEN AV<br>     <b>Total RTOR crashes:</b> 1<br>     <b>Severity score:</b> 1<br><br>      <b>Pedestrian serious injuries:</b> 0<br>     <b>Pedestrian deaths:</b> 0<br>      <b>Cyclist serious injuries:</b> 0<br>     <b>Cyclist deaths:</b> 0<br>     </div>`)[0];
+                popup_be5e36a0daf5ffabaaa815c120e21893.setContent(html_8941c97f8716b45772157e19e0738e21);
+            
+        
+
+        circle_marker_ebddc5dd23ff11f7452c0b254ca5a769.bindPopup(popup_be5e36a0daf5ffabaaa815c120e21893)
+        ;
+
+        
+    
+    
+            var circle_marker_785000f34598e112fe6c0381ab532280 = L.circleMarker(
+                [40.43637222222222, -80.00112694444445],
+                {"bubblingMouseEvents": true, "color": "#17b500", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#17b500", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 26.0, "stroke": true, "weight": 3}
+            ).addTo(map_8b957c8cb0fb419129be6d91e604b65a);
+        
+    
+        var popup_e83f222f89494c6fa04570da8ce7a3ce = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_d6065f51ba263ad752bc4eabcaa702f2 = $(`<div id="html_d6065f51ba263ad752bc4eabcaa702f2" style="width: 100.0%; height: 100.0%;">     <b>Intersection:</b> RAMP TO SR 8095/0010 RD; SMITHFIELD ST BR<br>     <b>Total RTOR crashes:</b> 1<br>     <b>Severity score:</b> 1<br><br>      <b>Pedestrian serious injuries:</b> 0<br>     <b>Pedestrian deaths:</b> 0<br>      <b>Cyclist serious injuries:</b> 0<br>     <b>Cyclist deaths:</b> 0<br>     </div>`)[0];
+                popup_e83f222f89494c6fa04570da8ce7a3ce.setContent(html_d6065f51ba263ad752bc4eabcaa702f2);
+            
+        
+
+        circle_marker_785000f34598e112fe6c0381ab532280.bindPopup(popup_e83f222f89494c6fa04570da8ce7a3ce)
+        ;
+
+        
+    
+    
+            var circle_marker_e3d2b5b6e4a14e298542b595cf7fd5ba = L.circleMarker(
+                [40.47766444444444, -79.78548416666666],
+                {"bubblingMouseEvents": true, "color": "#17b500", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#17b500", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 26.0, "stroke": true, "weight": 3}
+            ).addTo(map_8b957c8cb0fb419129be6d91e604b65a);
+        
+    
+        var popup_dba15b57f50cc6e1641496e6c40e717f = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_b8f91b27efd3d0516fdbca4d57bcd93c = $(`<div id="html_b8f91b27efd3d0516fdbca4d57bcd93c" style="width: 100.0%; height: 100.0%;">     <b>Intersection:</b> SALTSBURG RD; UNIVERSAL RD<br>     <b>Total RTOR crashes:</b> 1<br>     <b>Severity score:</b> 1<br><br>      <b>Pedestrian serious injuries:</b> 0<br>     <b>Pedestrian deaths:</b> 0<br>      <b>Cyclist serious injuries:</b> 0<br>     <b>Cyclist deaths:</b> 0<br>     </div>`)[0];
+                popup_dba15b57f50cc6e1641496e6c40e717f.setContent(html_b8f91b27efd3d0516fdbca4d57bcd93c);
+            
+        
+
+        circle_marker_e3d2b5b6e4a14e298542b595cf7fd5ba.bindPopup(popup_dba15b57f50cc6e1641496e6c40e717f)
+        ;
+
+        
+    
+    
+            var circle_marker_24c5ae34b7d9b965eb678263e63c239d = L.circleMarker(
+                [40.4592, -79.922055],
+                {"bubblingMouseEvents": true, "color": "#17b500", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#17b500", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 26.0, "stroke": true, "weight": 3}
+            ).addTo(map_8b957c8cb0fb419129be6d91e604b65a);
+        
+    
+        var popup_72b49fed57566164bc303ef99d0e7b19 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_819756a645883378c3407b8724f25d03 = $(`<div id="html_819756a645883378c3407b8724f25d03" style="width: 100.0%; height: 100.0%;">     <b>Intersection:</b> SHADY AV; SHAKESPEARE WY<br>     <b>Total RTOR crashes:</b> 1<br>     <b>Severity score:</b> 1<br><br>      <b>Pedestrian serious injuries:</b> 0<br>     <b>Pedestrian deaths:</b> 0<br>      <b>Cyclist serious injuries:</b> 0<br>     <b>Cyclist deaths:</b> 0<br>     </div>`)[0];
+                popup_72b49fed57566164bc303ef99d0e7b19.setContent(html_819756a645883378c3407b8724f25d03);
+            
+        
+
+        circle_marker_24c5ae34b7d9b965eb678263e63c239d.bindPopup(popup_72b49fed57566164bc303ef99d0e7b19)
+        ;
+
+        
+    
+    
+            tile_layer_b8a5116fd2e4f5d57e292de27368b64f.addTo(map_8b957c8cb0fb419129be6d91e604b65a);
+        
+</script>
+</html>
