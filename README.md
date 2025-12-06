@@ -1,45 +1,44 @@
-Allegheny County Right-Turn & RTOR Crash Analysis (2005–2024)
+# Allegheny County Right-Turn & RTOR Crash Analysis (2005–2024)
 
 This repository analyzes 20 years of PennDOT crash data (2005–2024) for Allegheny County, PA, with a specific focus on:
 
-Right-turn crashes
+- Right-turn crashes  
+- Right-Turn-On-Red (RTOR) crashes  
+- Non-motorist involvement (pedestrians & cyclists)  
+- Crash severity and fatalities  
+- County-wide spatial risk mapping and heatmaps  
 
-Right-Turn-On-Red (RTOR) crashes
+This project supports Vision Zero–style safety analysis by identifying high-risk intersections and movement patterns that disproportionately impact vulnerable road users.
 
-Non-motorist involvement (pedestrians & cyclists)
+---
 
-Crash severity and fatalities
+## Repository Structure
 
-County-wide spatial risk mapping and heatmaps
-
-The project supports Vision Zero–style safety analysis by identifying high-risk intersections and movement patterns that disproportionately impact vulnerable road users.
-
-Repository Structure
+```text
 smart_city/
 │
-├── Allegheny_2005/ ... Allegheny_2024/   # Raw PennDOT yearly datasets
+├── Allegheny_2005/ ... Allegheny_2024/    # Raw PennDOT yearly datasets
 │   ├── CRASH_ALLEGHENY_YYYY.csv
 │   ├── VEHICLE_ALLEGHENY_YYYY.csv
 │   ├── ROADWAY_ALLEGHENY_YYYY.csv
 │
-├── Crash_Data_Dictionary_2025.pdf      # PennDOT datasets dictonary
-├── traffic_analysis.ipynb              # Main analysis notebook
-├── right_turn_heatmap_animation.html  # Animated right-turn heatmap
+├── Crash_Data_Dictionary_2025.pdf        # PennDOT crash dataset dictionary
+├── traffic_analysis.ipynb               # Main analysis notebook
+├── right_turn_heatmap_animation.html   # Animated right-turn heatmap
 ├── rtor_non_motorist_intersection_map.html  # RTOR intersection map
 ├── README.md
+Data Sources & Coding Standards
+Data source: PennDOT Crash Reporting System
 
+Tables used:
 
-Data Sources
+Crash Table: crash-level severity, location, non-motorist counts
 
-All data originates from the PennDOT Crash Reporting System, including:
+Vehicle Table: per-vehicle movement codes
 
-Crash Table – crash-level details (severity, location, non-motorist counts)
+Roadway Table: roadway & street name context
 
-Vehicle Table – per-vehicle movement codes (turn behavior)
-
-Roadway Table – street & intersection context
-
-Key movement codes used:
+Key movement codes:
 
 09 = Right Turn on Red (RTOR)
 
@@ -47,7 +46,7 @@ Key movement codes used:
 
 11, 12 = Left Turn
 
-Intersection classification uses:
+Intersection classification:
 
 INTERSECT_TYPE = 01–13 → intersection-related
 
@@ -55,48 +54,48 @@ INTERSECT_TYPE = 01–13 → intersection-related
 
 99 → unknown (excluded)
 
-Key Features of the Analysis
 Automatic Multi-Year Data Loading
+Automatically scans:
 
-The notebook automatically scans all Allegheny_YYYY folders and merges:
+Allegheny_2005 through Allegheny_2024
 
-Crash data
+Automatically loads:
+
+Crash records
 
 Vehicle movement records
 
 Roadway & street name data
 
-No manual year selection is required.
+Automatically merges:
+
+Crash + Vehicle + Roadway tables
+
+No manual year selection required
 
 Non-Motorist Risk Analysis
+Left-turn vs Right-turn vs RTOR crash comparison
 
-The notebook computes:
+Non-motorist hit rate calculation
 
-Left-turn vs Right-turn vs RTOR crash risk
+Pedestrian vs cyclist breakdown
 
-Non-motorist hit rate
+Serious injury and fatality rate computation
 
-Pedestrian vs Cyclist breakdown
+Motorist vs non-motorist severity comparison
 
-Serious injury and fatality rates
+Confirmed findings:
 
-Motorist vs Non-motorist severity comparison
+Right-turn crashes show higher non-motorist hit rates than left turns
 
-Confirmed findings include:
-
-Right-turn crashes have a higher non-motorist hit rate than left turns
-
-RTOR crashes have a dramatically elevated non-motorist hit rate
+RTOR crashes show dramatically elevated non-motorist hit rates
 
 Non-motorist crashes are 2–3× more likely to result in serious injury or death
 
-Spatial Mapping & Visualization Features
-
-The notebook generates:
-
+Spatial Mapping & Visualization Outputs
 Static crash point maps
 
-Right-turn-only county heatmaps
+County-wide right-turn-only heatmaps
 
 Animated year-by-year heatmaps (2014–2024)
 
@@ -104,53 +103,68 @@ Intersection-level danger maps
 
 RTOR-specific non-motorist intersection maps
 
-Hoverable intersection maps with crash counts & injuries
+Hoverable intersection maps with:
 
-All maps are exported as:
+Crash counts
+
+Serious injuries
+
+Fatalities
+
+All maps exported as:
 
 *.html
 
+All maps viewable in:
 
-and can be opened in any browser or deployed via GitHub Pages.
+Any web browser
+
+GitHub Pages
 
 Severity-Weighted Heatmaps
+Crash weighting system:
 
-To better reflect true safety risk, each crash is weighted using:
+1 point = base crash
 
-1  point  = base crash  
-+4 points = serious injury  
-+10 points = fatality  
++4 points = serious injury
 
++10 points = fatality
 
-This ensures that fatal clusters visually dominate risk zones.
+Purpose:
+
+Ensures fatal clusters visually dominate risk zones
+
+Prevents low-severity clutter from masking lethal intersections
 
 GitHub Pages Interactive Maps
-
-Live, shareable interactive maps are hosted here:
+Live deployment:
 
 https://tianshu-huang.github.io/smart_city/
 
-
-Available demos include:
+Available demonstrations:
 
 Animated right-turn crash heatmap
 
 RTOR non-motorist intersection danger map
 
-Key Python Libraries Used
+Python Libraries Used
 pandas
+
 numpy
+
 geopandas
+
 matplotlib
+
 folium
+
 branca
+
 glob
+
 os
 
 Research Applications
-
-This analysis supports:
-
 Vision Zero safety audits
 
 RTOR policy evaluation
@@ -162,16 +176,17 @@ Smart city traffic mitigation planning
 Pedestrian & cyclist safety studies
 
 Limitations
+Near-miss events are not recorded in PennDOT data
 
-PennDOT does not record true near-miss events
-
-RTOR is inferred from vehicle movement codes
+RTOR identification is inferred from vehicle movement codes
 
 Coordinate accuracy varies by year
 
-No direct pedestrian signal phase data available
+Pedestrian signal phase data is unavailable
 
 Author
+Developed by: Tianshu Huang
 
-Developed by Tianshu Huang
-Carnegie Mellon University – Smart Cities / Transportation Safety Analysis
+Affiliation: Carnegie Mellon University
+
+Focus Area: Smart Cities / Transportation Safety Analysis
